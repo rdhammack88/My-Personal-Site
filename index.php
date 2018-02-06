@@ -20,27 +20,7 @@
 	<![endif]-->
 </head>
 
-<body class=""> <!-- container-fluid -->
-
-<!--<div class="container-fluid navHeading">-->
-	
-<!--			<h1 id="name"><span>Dustin Hammack</span></h1>-->
-
-<!--			<h4 id="title"><span>Full Stack Web Developer</span></h4>-->
-<!--</div>-->
-
-
-
-<!--
-<div class="img-wrapper">
-	<div class="img-container">
-		<img src="images/mePro.jpg" alt="">
-	</div>
-</div>
--->
-
-
-
+<body class="">
 
 <!--<div class="row" id="headingNav" >
 	<div class="navbar nav-container col-xs-1 col-sm-5 col-sm-push-1 col-md-6 col-md-push-1" id="mainNav">
@@ -73,11 +53,6 @@
 </div>-->
 
 
-
-
-<!--  -->
-	<!--  -->
-
 <nav>
 	<ul>
 		<li><a href="#main" id="home-link">Home</a></li>
@@ -87,11 +62,8 @@
 	</ul>
 </nav>
 
-<main> <!--  class="row clearfix" -->
-<!--
-<main class="row clearfix" id="mainContent">
-	<div class="show-front" id="cube">
--->
+<main>
+	
 	<div class="show-front" id="cube">
 		<section class="front" id="main">
 			<div id="home-wrapper">
@@ -135,17 +107,13 @@
 		<h2>Background</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>
 
-		<h2>Follow Me!</h2>
-
-
-		<!--  -->
-	<!--  -->
 		<!-- I currently have experience using the LAMP stack. -->
 		<!-- HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. -->
 
 	<!--	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>-->
 
 
+<!--		<h2>Follow Me!</h2>-->
 		<!--<img src="images/icons/facebook-icon.png" alt="facebook-icon">
 		<img src="images/icons/instagram-icon.png" alt="instagram-icon">
 		<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
@@ -153,10 +121,8 @@
 
 	</section>
 
-<section class="right" id="projects"> <!-- container -->
-
-<!--	<div class="container">   col-xs-10 col-xs-offset-1 -->
-		
+<section class="right" id="projects">
+	
 		<?php 
 			$jsonFile = file_get_contents("js/projects.json");
 			$jsonData = json_decode($jsonFile, true);
@@ -182,59 +148,53 @@
 
 			
 		<?php } ?>
-		<?php  ?>
-		<?php  ?>
-		
-		
-<!--	</div>-->
 </section>
 
 <!-- Contact Code Goes Here -->
 <!--  col-xs-12 col-md-offset-1 col-md-6 col-md-offset-3" -->
-<section class="bottom" id="contact"> <!-- container id="contact">-->
-	<h2 class="text-center text-info">Contact me for work</h2> <!--<br/><br/>-->	
+		<section class="bottom" id="contact"> <!-- container id="contact">-->
+			<h2 class="text-center text-info">Contact me for work</h2> <!--<br/><br/>-->	
 
-	<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-		<p><span class="text-danger">&#42; All fields required</span></p>
-		<div class="form-group">
-			
-			<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--			<small class="text-danger">* </small>-->
-<!--			<small class="text-danger nameError">Required</small>-->
-			</label>
-			<input type="text" class="form-control" id="name" name="name" required>
-		</div>
-		<div class="form-group">
-			<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--			<small class="text-danger">* </small>-->
-<!--			<small class="text-danger emailError">Required</small>-->
-			</label>
-			<input type="text" class="form-control" id="email" name="email" required>
-		</div>
-		<div class="form-group">
-			<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--			<small class="text-danger">* </small>-->
-<!--			<small class="text-danger emailError">Required</small>-->
-			</label>
-			<input type="text" class="form-control" id="subject" name="subject">
-		</div>
-		<div class="form-group">
-			<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--			<small class="text-danger">* </small>-->
-<!--			<small class="text-danger emailError">Required</small>-->
-			</label>
-			<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
-		</div>
-<!--		<p><span class="text-danger">All fields required</span></p>-->
-<!--		<p><span class="text-danger">* = Required</span></p>-->
-<!--		<span class="text-danger">*</span>-->
-		<br/>
+			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+				<p><span class="text-danger">&#42; All fields required</span></p>
+				<div class="form-group">
 
-		<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
-<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
-	</form>
-</section>
-<!--</div>-->
+					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger nameError">Required</small>-->
+					</label>
+					<input type="text" class="form-control" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger emailError">Required</small>-->
+					</label>
+					<input type="text" class="form-control" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger emailError">Required</small>-->
+					</label>
+					<input type="text" class="form-control" id="subject" name="subject">
+				</div>
+				<div class="form-group">
+					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger emailError">Required</small>-->
+					</label>
+					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
+				</div>
+		<!--		<p><span class="text-danger">All fields required</span></p>-->
+		<!--		<p><span class="text-danger">* = Required</span></p>-->
+		<!--		<span class="text-danger">*</span>-->
+				<br/>
+
+				<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
+		<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
+			</form>
+		</section>
 	</div>
 </main>
 
@@ -249,19 +209,12 @@ src="https://code.jquery.com/jquery-1.12.4.min.js"
 integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 crossorigin="anonymous"></script>
 
-
 <!-- Minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="js/scripts.js"></script>
-<script type="text/javascript">
-	// Call Fancybox
-	/*$(document).ready(function(){
-		$(".fancybox").fancybox();
-	});*/
-</script>
 </body>
 </html>
 
-
-<!--<div><h4>Xmas Timer</h4></div>-->
+<?php  ?>
+<?php  ?>

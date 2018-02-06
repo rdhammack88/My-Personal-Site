@@ -40,8 +40,7 @@ nav {
   width: 100%;
   padding: 7px 10px 0 0;
   text-align: right;
-  font-size: .5em;
-  position: fixed; }
+  font-size: .5em; }
   @media (min-width: 768px) {
     nav {
       font-size: 1em;
@@ -55,9 +54,6 @@ nav {
   nav > ul li:nth-of-type(3)::after {
     content: '|';
     padding: 0 20px; }
-
-main {
-  position: relative; }
 
 /* ROTATION CUBE */
 @media (min-width: 2100px) {
@@ -78,21 +74,27 @@ main {
     left: 0;
     backface-visibility: hidden; } }
 
-@media (min-width: 2100px) {
-  #cube .front#main {
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(136px);
-    -moz-transform: translateZ(136px);
-    -o-transform: translateZ(136px);
-    transform: translateZ(136px); } }
+#cube .front#main {
+  width: 100vw;
+  height: 100vh; }
+  @media (min-width: 2100px) {
+    #cube .front#main {
+      backface-visibility: hidden;
+      -webkit-transform: translateZ(136px);
+      -moz-transform: translateZ(136px);
+      -o-transform: translateZ(136px);
+      transform: translateZ(136px); } }
 
-@media (min-width: 2100px) {
-  #cube.show-front {
-    -webkit-transform: translateZ(-36px);
-    -moz-transform: translateZ(-136px);
-    -o-transform: translateZ(-136px);
-    transform: translateZ(-36px);
-    transition: all 1.4s ease-in-out; } }
+#cube.show-front {
+  width: 100vw;
+  overflow-x: hidden; }
+  @media (min-width: 2100px) {
+    #cube.show-front {
+      -webkit-transform: translateZ(-36px);
+      -moz-transform: translateZ(-136px);
+      -o-transform: translateZ(-136px);
+      transform: translateZ(-36px);
+      transition: all 1.4s ease-in-out; } }
 
 #cube .left#about {
   width: 75%;
@@ -156,11 +158,11 @@ main {
 
 /* ROTATION CUBE END */
 div#home-wrapper {
-  width: 100%;
-  margin-top: 60px;
+  width: 100vw;
+  height: 100%;
   position: relative; }
   div#home-wrapper > div#home-left {
-    width: 50vw;
+    width: 49vw;
     height: 95vh;
     float: left;
     background: url(../images/G0050332.JPG) left no-repeat;
@@ -207,10 +209,10 @@ div#home-wrapper {
             div#home-wrapper > div#home-left > #home-img-holder > div img {
               width: 100%; } }
   div#home-wrapper > div#home-right {
-    width: 50vw;
+    width: 49vw;
     height: 95vh;
     display: inline;
-    float: right;
+    float: left;
     position: relative;
     text-align: center; }
     div#home-wrapper > div#home-right .text-holder {
@@ -230,7 +232,8 @@ div#home-wrapper {
         margin: auto; }
 
 #cube section#contact {
-  height: 100vh; }
+  height: 100vh;
+  margin: 100px 0 0; }
   @media (min-width: 2100px) {
     #cube section#contact {
       overflow: hidden;

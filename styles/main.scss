@@ -3,14 +3,10 @@
 
 * { transition: all 1s ease-in-out; }
 
-html {
-//	background: $background;
-}
-
 body {
-	width: 100vw;
+//	width: 100vw;
 //	max-width: 1300px;
-	height: 100vh;
+//	height: 100vh;
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
@@ -90,21 +86,37 @@ body {
 }
 
 nav {
-	width: 100%; // 100vw;
+	width: 50vw; // 100vw;
 //	height: 5vh;
-	padding: 7px 10px 0 0;
-	text-align: right;
-	font-size: .5em;
-//	position: fixed;
+//	padding: 12px 10px 0 0;
+//	text-align: center;
+//	font-size: .5em;
+	z-index: 999;
+	font-size: 1.1em;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	right: 0;
 	
-	@include break(768px) {
-		font-size: 1em;
-		padding-right: 20px;
+	@include break(300px, 568px) {
+		width: 100vw;
+		font-size: 1.2em;
+//		text-align: left;
+	}
+	
+	@include break(868px) {
+		font-size: 1.2em;
+//		padding-right: 35px;
+		padding-top: 15px;
+	}
+	
+	> ul {
+		padding: 0;
 	}
 	
 	> ul li {
 		display: inline;
-		font-size: 2.2em;
+//		font-size: 2.2em;
 		letter-spacing: .4em;
 	}
 	
@@ -112,7 +124,11 @@ nav {
 	> ul li:nth-of-type(2)::after,
 	> ul li:nth-of-type(3)::after {
 		content: '|';
-		padding: 0 20px;
+		padding: 0 12px;
+		
+		@include break(300px, 568px) {
+			padding: 0 6px;
+		}
 	}
 }
 
@@ -121,220 +137,32 @@ main {
 //	height: 270px;
 //	position: relative;
 //	margin: 100px auto 40px;
-	
-	// DIDNT DO ANYTHING WHEN REMOVED>>>>???????
-//	-webkit-perspective: 100000px; // 10000
-//	-moz-perspective: 100000px;
-//	-o-perspective: 100000px;
-//	perspective: 100000px; // 10000
 }
 
-/* ROTATION CUBE */
-#cube {
-//	overflow: hidden;
-//	height: 92vh;
-//	margin-top: 3vh;
-//	position: absolute; ///////////////
-	
-	@include break(2100px) {
-		width: 100%;
-		height: 90vh;
-		-webkit-transform-style: preserve-3d;
-		-moz-transform-style: preserve-3d;
-		-o-transform-style: preserve-3d;
-		transform-style: preserve-3d;
-	}
-}
-
-#cube section {
+section {
 //	height: 100%;
 //	min-height: 600px;
 //	overflow: auto;
-	
-	@include break(2100px) {
-		display: block;
-		width: 100vw;
-		position: absolute;
-		top: 0;
-		left: 0;
-		backface-visibility: hidden;
-	}
 }
 
-#cube .front#main {
-	width: 100vw;
+//#cube .front#main {
+#main {
+//	width: 100vw;
 	height: 100vh;
 //	margin-top: 200px;
 //	overflow-x: hidden;
-	
-	@include break(2100px) {
-		backface-visibility: hidden;
-		-webkit-transform: translateZ(136px);
-		-moz-transform: translateZ(136px);
-		-o-transform: translateZ(136px);
-		transform: translateZ(136px);
-	}
 }
-
-#cube.show-front {
-	width: 100vw;
-	overflow-x: hidden;
-	@include break(2100px) {
-		-webkit-transform: translateZ(-36px);
-		-moz-transform: translateZ(-136px);
-		-o-transform: translateZ(-136px);
-		transform: translateZ(-36px);
-		transition: all 1.4s ease-in-out;
-	}
-
-}
-
-#cube .left#about {
-	width: 75%;
-	height: 100vh;
-	margin: 0 auto;
-}
-
-#cube.show-left {
-	
-}
-
-#cube .right#projects {
-	width: 75%;
-	height: 100%;
-	min-height: 2500px;
-	margin: 0 auto;
-	
-	@include break(2100px) {
-		margin-top: 100px;
-	//	overflow-y: auto;
-	//	position: absolute;
-		top: 0;
-		left: 100vw;		
-		backface-visibility: hidden;
-		-webkit-transform: rotateY(90deg) translateZ(136px);
-		-moz-transform: rotateY(90deg) translateZ(136px);
-		-o-transform: rotateY(90deg) translateZ(136px);
-		transform: rotateY(90deg) translateZ(136px); // skewY(130deg);
-	}
-
-	.project-container {
-		height: 250px;
-		background: #000;
-		margin: 50px auto 50px;
-	//	overflow: scroll;
-	}
-
-	#projects {
-	//	height: 100%;
-	//	overflow-y: auto;
-	}
-}
-
-#cube.show-right {
-//	overflow-y: scroll;
-//	overflow-x: hidden;
-	
-	@include break(2100px) {
-		height: 100%;
-		min-height: 1600px;
-		padding-bottom: 100px;
-
-		backface-visibility: hidden;
-		-webkit-transform: translateZ(136px) rotateY(-90deg);
-		-moz-transform: translateZ(136px) rotateY(-90deg);
-		-o-transform: translateZ(136px) rotateY(-90deg);
-		transform: translateZ(136px) rotateY(-90deg);
-		transition: all 1.4s ease-in-out;
-		
-		.right {
-			overflow-x: hidden;
-	//		height: 100vh;
-	//		min-height: 1800px;
-	//		-webkit-transform: rotateY(90deg) translateZ(136px);
-	//		-moz-transform: rotateY(90deg) translateZ(136px);
-	//		-o-transform: rotateY(90deg) translateZ(136px);
-	//		transform: rotateY(90deg) translateZ(136px) skewY(360deg);
-		}
-
-		.front {
-	//		position: absolute;
-	//		left: 100vw;
-	//		position: absolute;
-	//		right: 100vw;
-	//		display: none;
-	//		transition: display 3s ease;
-		}	
-	}
-}
-
-#cube .bottom {
-//	background: url(../images/pexels-photo-841116.jpeg) top left no-repeat;
-//	background-size: contain;
-//	width: 100%;
-//	height: 100%;
-//	margin-top: 300px;
-//	position: absolute;
-//	top: 100vh;
-	
-	
-	@include break(2100px) {
-		top: 100vh;
-	
-		-webkit-transform: rotateX(-90deg) translateZ(136px);
-		-moz-transform: rotateX(-90deg) translateZ(136px);
-		-o-transform: rotateX(-90deg) translateZ(136px);
-		transform: rotateX(-90deg) translateZ(136px);
-	}
-}
-
-#cube.show-bottom {
-//	margin-top: 100px;
-//	height: 80vh;
-//	overflow: hidden;
-	
-	
-	@include break(2100px) {
-		backface-visibility: hidden;
-		-webkit-transform: translateZ(136px) rotateX(90deg);
-		-moz-transform: translateZ(136px) rotateX(90deg);
-		-o-transform: translateZ(136px) rotateX(90deg);
-		transform: translateZ(136px) rotateX(90deg);
-		transition: all 1.4s ease-in-out;
-		
-		.bottom {
-			top: 100vh;
-		}
-
-		.right {
-			top: 100vh;
-
-	//		-webkit-transform: translateZ(136px);
-	//		-moz-transform: translateZ(136px);
-	//		-o-transform: translateZ(136px);
-	//		transform: translateZ(136px);
-		}
-	}
-}
-/* ROTATION CUBE END */
-
 
 div#home-wrapper {
-	width: 100vw;
-//	width: 100%;
+//	width: 100vw;
+	width: 100%;
 	height: 100%;
-//	min-height: 600px;
-//	margin-top: 60px;
 	position: relative;
 	
 	> div#home-left {
-		width: 49vw;
-//		height: 93vh;
-		height: 95vh; // 95vh;
-		
-//		min-height: 600px;	//////////////
-		
-//		display: inline;
+//		width: 50vw;
+		width: 50%;
+		height: 100vh; // 95vh;
 		float: left;
 		background: url(../images/G0050332.JPG) left no-repeat;
 		background-size: cover;
@@ -342,7 +170,7 @@ div#home-wrapper {
 		position: relative;
 		
 		.left-cover {
-			height: 95vh;
+			height: 100vh;
 			background: transparentize($darkblue, .4); // opacify 
 		}
 		
@@ -352,26 +180,30 @@ div#home-wrapper {
 			width: 60%; // 50%;
 			position: absolute;
 			left: 52%; // 68%;
-			top: 31vh;
+			top: 34vh;
 			
 			@include break(768px) {
-				left: 48%;
-				width: 60%;
+				left: 62%;
+				width: 48%;
 			}
 			
 			@include break(1000px) {
-				left: 57%;
-				width: 50%;
+				left: 70%;
+				width: 44%;
+			}
+			
+			@include break(1500px) {
+				width: 37%;
 			}
 			
 			@include break(1700px) {
-				left: 60%;
-				width: 40%;
+				left: 75%;
+				width: 30%;
 			}
 			
-			@include break(1900px) {
-				left: 70%;
-				width: 30%;
+			@include break(2000px) {
+				left: 80%;
+				width: 25%;
 			}
 			
 			@include height-break(569px) {
@@ -391,11 +223,7 @@ div#home-wrapper {
 				
 				img {
 					width: 100%;
-					max-width: 450px;
-//					height: 200px;
-//					max-height: 500px;
-//					min-height: 400px;
-					
+					max-width: 450px;					
 					
 					@include height-break(300px, 568px) {
 						width: 100%;
@@ -407,21 +235,17 @@ div#home-wrapper {
 //	//					height: 200px;
 //						max-height: 500px;
 					}
-					
-					@include break(1000px) {
-//						height: 400px;
-//						width: 130%;
-					}
 				}
 			}
 		}
 	}
 	
 	> div#home-right {
-		width: 49vw;
-		height: 95vh;
-		display: inline;
-		float: left; // right
+//		width: 50vw;
+		width: 50%;
+		height: 100vh;
+		display: inline-block;
+		float:  right; // left; //
 		position: relative;
 		text-align: center;
 		
@@ -429,37 +253,145 @@ div#home-wrapper {
 			vertical-align: middle;
 			display: table-cell;
 			font-size: 1.5em;
-			height: 95vh;
+			width: 50vw;
+			height: 100vh;
+			padding-left: 10%;
 			
 			@include break(300px, 568px) {
+				width: 70vw;
 				position: absolute;
-				left: -200px;
-				top: 60vh;
+				left: -40vw; // -150px; // -200px;
+				top: 65vh;
+				color: darken($goldenrod, 20%);
+				font-size: 1.1em;
+			}
+			
+			h2 {
+				margin-bottom: -10px;
+				margin-top: -20px;
+			}
+			
+			h4 {
+				margin-top: -2px;
+				margin-bottom: 25px;
+			}
+			
+			span {
 				color: $goldenrod;
+				vertical-align: middle;
+				
+				&:first-of-type {
+					position: relative;
+					right: -5px;
+				}
+				
+				&:last-of-type {
+					position: relative;
+					right: 5px;
+				}
+			}
+			
+			hr {
+				border: .5px solid  darken($goldenrod, 20%);
+				display: inline-block;
+				width: 70%;
+				margin: 0 auto;
+				-webkit-margin-before: 0;
+				-webkit-margin-after: 0;
+				vertical-align: middle;
 			}
 			
 			p {
 				text-align: center;
 				width: 50%;
 				margin: auto;
+				
+				
+				@include break(300px, 568px) {
+					width: 80%;
+//					color: #777;
+					color:  darken($green, 10%);
+					font-size: 1.2em;
+				}
 			}
 		}
 	}
 }
 
-//@include height-break(300px, 568px) {
-//	width: 100%;
-//}
-
-#cube section#contact {
+div#about-wrapper {
+//	width: 100vw;
+	width: 100%;
 	height: 100vh;
-	margin: 100px 0 0;
-	@include break(2100px) {
-		overflow: hidden;
-		backface-visibility: hidden;
+	padding-top: 50px;
+	position: relative;
+	left: 0;
+	
+	h2 {
+		width: 80vw;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;
 	}
 	
+	p {
+		width: 80vw;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
 	
+}
+
+section#about {
+//	text-align: center;
+//	width: 100vw;
+////	width: 100%;
+//	height: 99vh;
+//	margin: 0;
+//	padding: 0;
+//	overflow-x: hidden;
+//	overflow: hidden;
+	
+//	> .about-wrapper {
+//		width: 75%;
+//		margin: 50px auto 50px;
+//	}
+	
+//	& * {
+//		padding: 0;
+//		margin: 0;
+//		width: 90%;
+//	}
+}
+
+#projects {
+	width: 100%;
+	height: 100vh; //100%;
+//	min-height: 2500px;
+	margin: 0 auto;
+	padding: 50px 50px 0;
+
+	.project-container {
+//		width: 30%;
+		@include imagegrid(3, 5%);
+		height: 250px;
+		display: inline-block;
+		background: rgba(42, 42, 42, 0.5);
+//		margin: 0 3% 50px;
+	//	overflow: scroll;
+	}
+
+	#projects {
+	//	height: 100%;
+	//	overflow-y: auto;
+	}
+}
+
+#contact {
+	height: 100vh;
+	margin: 0;
+	padding-top: 25vh;
+
 //	margin-top: 100px;
 //	max-height: 500px;
 //	background: url(../images/pexels-photo-841116.jpeg) top left no-repeat;
@@ -469,7 +401,6 @@ div#home-wrapper {
 //	height: 100vh;
 //	margin: 100px 0 0 0;
 }
-
 
 @include break(2100px) {
 	

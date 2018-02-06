@@ -63,35 +63,32 @@
 </nav>
 
 <main>
-	
-	<div class="show-front" id="cube">
-		<section class="front" id="main">
-			<div id="home-wrapper">
-				<div id="home-left">
-					<div class="left-cover"></div>
-					<div id="home-img-holder">
-						<div>
-							<img src="images/mePro.jpg" alt="">
-						</div>
-					</div>
-				</div>
-				<div id="home-right">
-					<div class="text-holder">
-						<h2>Dustin Hammack</h2>
-						<h4>Full Stack Web Developer</h4>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quia quam veritatis, excepturi, cum tempore nisi dolores autem nemo earum!
-						</p>
+	<section id="main">
+		<div id="home-wrapper">
+			<div id="home-left">
+				<div class="left-cover"></div>
+				<div id="home-img-holder">
+					<div>
+						<img src="images/mePro.jpg" alt="">
 					</div>
 				</div>
 			</div>
-		</section>
+			<div id="home-right">
+				<div class="text-holder">
+					<h2>Dustin Hammack</h2>
+					<span>&lt;</span><hr><span>&gt;</span>
+					<h4>Full Stack Web Developer</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quia quam veritatis, excepturi, cum tempore nisi dolores autem nemo earum!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-
-	<section class="left" id="about">
-
+	<section id="about">
+		<div id="about-wrapper">
 		<h2>Who am I?</h2>
-
 		<p>I am a 28 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
 		<ul style="list-style: none; color: antiquewhite;">
 			<li>HTML</li>
@@ -104,24 +101,33 @@
 			<li>MySQL</li>
 		</ul>
 
+	
 		<h2>Background</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>
 
-		<!-- I currently have experience using the LAMP stack. -->
-		<!-- HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. -->
+		<p>I currently have experience using the LAMP stack. 
+		HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. </p>
+		<br><br>
+		 
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>		
+		
 
-	<!--	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>-->
 
 
-<!--		<h2>Follow Me!</h2>-->
-		<!--<img src="images/icons/facebook-icon.png" alt="facebook-icon">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>
+
+
+<!--
+		<h2>Follow Me!</h2>
+		<img src="images/icons/facebook-icon.png" alt="facebook-icon">
 		<img src="images/icons/instagram-icon.png" alt="instagram-icon">
 		<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
-		-->
+-->
+		
+		</div>
 
 	</section>
 
-<section class="right" id="projects">
+	<section id="projects">
 	
 		<?php 
 			$jsonFile = file_get_contents("js/projects.json");
@@ -129,13 +135,12 @@
 			foreach($jsonData['projects'] as $key => $value) {
 		 ?>
 		 
-		 <div class="project-container col-xs-12"> <!-- col-sm-8 col-sm-offset-2">-->
-<!--
+		 <div class="project-container col-xs-12"> 
+		 <!-- col-sm-8 col-sm-offset-2">-->
 		 	<div class="project-overlay"></div>
 			 <div class="project-description">
 			 	<h3><?= $value['projectname']; ?></h3>
 			 </div>
--->
 		 </div>
 
 		 <!--<div class="container project-container col-md-6">
@@ -146,56 +151,54 @@
 			</div>
 		</div>-->
 
-			
 		<?php } ?>
-</section>
+	</section>
 
 <!-- Contact Code Goes Here -->
 <!--  col-xs-12 col-md-offset-1 col-md-6 col-md-offset-3" -->
-		<section class="bottom" id="contact"> <!-- container id="contact">-->
-			<h2 class="text-center text-info">Contact me for work</h2> <!--<br/><br/>-->	
+	
+<section class="bottom" id="contact"> <!-- container id="contact">-->
+		<h2 class="text-center text-info">Contact me for work</h2> <!--<br/><br/>-->	
+		<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<p><span class="text-danger">&#42; All fields required</span></p>
+			<div class="form-group">
 
-			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-				<p><span class="text-danger">&#42; All fields required</span></p>
-				<div class="form-group">
+				<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--			<small class="text-danger">* </small>-->
+	<!--			<small class="text-danger nameError">Required</small>-->
+				</label>
+				<input type="text" class="form-control" id="name" name="name" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--			<small class="text-danger">* </small>-->
+	<!--			<small class="text-danger emailError">Required</small>-->
+				</label>
+				<input type="text" class="form-control" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--			<small class="text-danger">* </small>-->
+	<!--			<small class="text-danger emailError">Required</small>-->
+				</label>
+				<input type="text" class="form-control" id="subject" name="subject">
+			</div>
+			<div class="form-group">
+				<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--			<small class="text-danger">* </small>-->
+	<!--			<small class="text-danger emailError">Required</small>-->
+				</label>
+				<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
+			</div>
+	<!--		<p><span class="text-danger">All fields required</span></p>-->
+	<!--		<p><span class="text-danger">* = Required</span></p>-->
+	<!--		<span class="text-danger">*</span>-->
+			<br/>
 
-					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger nameError">Required</small>-->
-					</label>
-					<input type="text" class="form-control" id="name" name="name" required>
-				</div>
-				<div class="form-group">
-					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger emailError">Required</small>-->
-					</label>
-					<input type="text" class="form-control" id="email" name="email" required>
-				</div>
-				<div class="form-group">
-					<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger emailError">Required</small>-->
-					</label>
-					<input type="text" class="form-control" id="subject" name="subject">
-				</div>
-				<div class="form-group">
-					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger emailError">Required</small>-->
-					</label>
-					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
-				</div>
-		<!--		<p><span class="text-danger">All fields required</span></p>-->
-		<!--		<p><span class="text-danger">* = Required</span></p>-->
-		<!--		<span class="text-danger">*</span>-->
-				<br/>
-
-				<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
-		<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
-			</form>
-		</section>
-	</div>
+			<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
+	<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
+		</form>
+	</section>
 </main>
 
 

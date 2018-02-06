@@ -1,17 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-//	document.getElementById('home-link').addEventListener('click', linkClick('home'));
-//	document.getElementById('project-link').addEventListener('click', linkClick('project'));
-//	document.getElementById('contact-link').addEventListener('click', linkClick('contact'));
-	var cube = document.querySelector('#cube');
-	document.getElementById('home-link').addEventListener('click', function(e) {
-		cube.className = 'show-front';
-	});
-	document.getElementById('project-link').addEventListener('click', function(e) {
-		cube.className = 'show-right';
-	});
-	document.getElementById('contact-link').addEventListener('click', function(e) {
-		cube.className = 'show-bottom';
-	});
+
+	var main = document.getElementById('main');
+	window.document.body.style.overflowY = 'hidden';
+	
+	console.log(main);
 });
 
 

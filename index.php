@@ -203,23 +203,18 @@
 	</section>
 </main>
 
-
 <!-- Scripts -->
-<!--	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
 <!-- Include JQuery -->
-<!--<script type="text/javascript" src="js/jquery.js"></script>-->
+<!--	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
 
+<!-- jQuery CDN -->
 <script
 src="https://code.jquery.com/jquery-1.12.4.min.js"
 integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 crossorigin="anonymous"></script>
-
-<!-- Minified JavaScript -->
+<!-- Minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+<!-- Custom JavaScript -->
 <script src="js/scripts.js"></script>
 </body>
 </html>
-
-<?php  ?>
-<?php  ?>

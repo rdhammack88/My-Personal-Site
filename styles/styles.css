@@ -66,8 +66,59 @@ nav {
       nav > ul li:nth-of-type(3)::after {
         padding: 0 6px; } }
 
-#main {
+section {
   height: 100vh; }
+  section:nth-of-type(3) {
+    height: 400vh; }
+  @media (min-width: 768px) {
+    section {
+      position: relative;
+      top: 0;
+      left: 0; }
+      section:nth-of-type(3) {
+        height: 100vh; } }
+  section .scroll-up-button {
+    display: none; }
+    @media (min-width: 768px) {
+      section .scroll-up-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px; }
+        section .scroll-up-button .scroll-up {
+          background: rgba(220, 220, 220, 0.4);
+          border: .5px solid #000;
+          border-radius: 5px;
+          margin: 0 auto 5px;
+          font-size: 2em;
+          color: #022933;
+          width: 2em;
+          padding: 5px;
+          animation: scroll-btn 1s infinite; } }
+  section .scroll-down-button {
+    display: none; }
+    @media (min-width: 768px) {
+      section .scroll-down-button {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px; }
+        section .scroll-down-button .scroll-down {
+          background: rgba(220, 220, 220, 0.4);
+          border: .5px solid #000;
+          border-radius: 5px;
+          margin: 0 auto 5px;
+          font-size: 2em;
+          color: #022933;
+          width: 2em;
+          padding: 5px;
+          animation: scroll-btn 1s infinite; } }
 
 div#home-wrapper {
   width: 100%;
@@ -180,38 +231,95 @@ div#home-wrapper {
 
 div#about-wrapper {
   width: 100%;
-  height: 100vh;
-  padding-top: 50px;
+  height: 100%;
+  padding-top: 10vh;
+  text-align: center;
   position: relative;
-  left: 0; }
+  left: 0;
+  top: 0; }
   div#about-wrapper h2 {
     width: 80vw;
     padding: 0;
-    margin: 0 auto;
-    text-align: center; }
-  div#about-wrapper p {
+    margin: 0 auto; }
+  div#about-wrapper p:not(:first-of-type) {
     width: 80vw;
     padding: 0;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 0 auto; }
+  div#about-wrapper ul {
+    list-style: none; }
 
-#projects {
+div#project-wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
-  padding: 50px 50px 0 0; }
-  #projects h2 {
+  padding: 75px 50px 0 0; }
+  div#project-wrapper h2 {
     padding: 0;
     margin: 0 0 25px; }
-  #projects .project-container {
-    height: 250px;
+  div#project-wrapper .project-container {
+    height: 400px;
     display: inline-block;
     margin-bottom: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
     background: rgba(42, 42, 42, 0.5); }
+    @media (min-width: 768px) {
+      div#project-wrapper .project-container {
+        height: 220px; } }
+    div#project-wrapper .project-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    div#project-wrapper .project-container .project-overlay {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(245, 245, 245, 0.1);
+      text-align: center;
+      z-index: 2;
+      padding: 100px 0 0 0; }
 
-#contact {
-  height: 100vh;
-  margin: 0;
-  padding-top: 20vh; }
+div#contact-wrapper {
+  margin-top: 120px; }
+  @media (min-width: 768px) {
+    div#contact-wrapper {
+      height: 100%;
+      margin: 0;
+      padding-top: 20vh; } }
+
+@-webkit-keyframes scroll-btn {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+@-moz-keyframes scroll-btn {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+@-o-keyframes scroll-btn {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+@keyframes scroll-btn {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+	// Function to test screen width and enabel/disable scroll //
 	function hiddenOverflow() {
 		if(window.innerWidth > 768) {
 			window.document.body.style.overflowY = 'hidden';
@@ -6,14 +7,183 @@ document.addEventListener('DOMContentLoaded', function() {
 			window.document.body.style.overflowY = 'auto';
 		}
 	}
-	
+	// Immediately invoke function to test screen width and enabel/disable scroll //
 	hiddenOverflow();
+	// Add event listener to check for resize of screen to enabel/disable scroll //
 	window.addEventListener('resize', hiddenOverflow);
+	
+	$('.project-container').hover(function() {
+		$(this).children('.project-overlay').fadeToggle(100);
+	}).blur(function() {
+//		$(this).children('.project-overlay').fadeOut();
+	})
+	
+	
+	
+	
+	
+	
+	
+	$('#gallery').on('click', 'li a', function(e) {
+		e.preventDefault();
+	});
+	// On click of each project, display an overlay //
+	$('.project-details').click(function(e) {
+		e.preventDefault();
+		
+		//////	Set variables	//////		
+		/////	Set project Image Source    /////
+		var image = $(this).find('img').attr('src');
+		var index = image.indexOf('-');
+		var src = image.slice(0, index + 1) + 'XL.png';
+//		src = src + 'XL.png';
+		
+		/////	Set project Title    /////		
+		var title = $(this).find('.title').clone(true).text();
+		/////	Set project Complete or not    /////		
+		var finished = $(this).find('.finished').text();
+		var complete = finished == 'True' ? '' : 'This is not a finished project, and is still under development.';
+		
+		/////	Set project Description    /////
+		var description = $(this).find('.description').clone(true).html();
+		
+		/////	Set project Site Link    /////
+		var site = $(this).find('.site').attr('href');
+
+		/////	Set project Repository Link    /////
+		var repository = $(this).find('.repository').attr('href');
+		
+		var myOverlay = document.createElement('div');
+		myOverlay.id = 'overlay';
+		document.body.appendChild(myOverlay);
+		
+		$('#overlay').css({
+			'width': window.innerWidth + 'px',
+//			'max-width': '1000px',
+			'height': window.innerHeight + 'px',
+			'position': 'absolute',
+			'top': window.pageYOffset + 'px', //'50px',
+			'left': window.pageXOffset + 'px',
+			'display': 'none'
+//			'-webkit-transition': 'background-color 6s',
+//			'-moz-transition': 'background-color 6s',
+//			'-o-transition': 'background-color 6s',
+//			'transition': 'background-color 6s'
+//			'left': (window.innerWidth - $('#overlay').width()) / 2,
+////			'margin': '0 auto',
+//			'backgroundColor': 'rgba(0,0,0,.7)',
+//			'cursor': 'pointer'
+//			'transition': 'backgroundColor 2s'
+
+		});
+		
+		
+//style='height:300px; width:600px;'  class='img-responsive'  col-md-push-0
+		//<p class='col-xs-10 col-xs-offset-1 popupDescriptionHeader'>Project description: <span
+		myOverlay.innerHTML = "<div id='projectPopup' class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4'><img src='" + src + "' /><h2 class='col-xs-10 col-xs-offset-1 popupTitle'>" + title + "</h2><p class='col-xs-10 col-xs-offset-1 popupDescription'>" + description + "</p><p class='col-xs-10 col-xs-offset-1 text-danger popupComplete'><small>" + complete + "</small></p><p class='col-xs-10 col-xs-offset-1'><a href='" + site + "' class='btn btn-primary btn-lg popupSite col-xs-12 col-sm-5' target='_blank'>View Project</a><a href='" + repository + "' class='btn btn-success btn-lg popupRepository col-xs-12 col-sm-5 col-sm-push-2' target='_blank'>View Code</a></p></div>";
+		
+		
+		$('#overlay').fadeIn(1200);
+		
+		$("#projectPopup").css({
+			'marginTop': (window.innerHeight - $("#projectPopup").height()) / 10
+		});
+		
+				myOverlay.addEventListener('click', function(e) {
+//					console.log(e.target.tagName);
+					if(myOverlay) { // && !(e.target.tagName === 'A')
+						window.removeEventListener('resize', window, false);
+						window.removeEventListener('scroll', window, false);
+						myOverlay.parentNode.removeChild(myOverlay);
+					}
+				}, false);
+				
+				window.addEventListener('scroll', function() {
+					if(myOverlay) {
+						myOverlay.style.top = window.pageYOffset + 'px';
+						myOverlay.style.left = window.pageXOffset + 'px';
+					}
+				}, false);
+				
+				window.addEventListener('resize', function() {
+					if(myOverlay) {
+						myOverlay.style.width = window.innerWidth + 'px';
+						myOverlay.style.height = window.innerHeight + 'px';
+						myOverlay.style.top = window.pageYOffset + 'px';
+						myOverlay.style.left = window.pageXOffset + 'px';
+						
+//						centerElement($('#overlay')); //$('#overlay')
+					}
+				}, false);
+				
+//			}
+		
+		function centerElement(theElement) {
+			var myDifX = (window.innerWidth - theElement.width)/2;
+			var myDifY = (window.innerHeight - theElement.height)/2;
+			
+			theElement.style.top = myDifY + 'px';
+			theElement.style.left = myDifX + 'px';
+			
+			return theElement;
+		}
+		
+		
+	});	// End of li click
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// Add event listener to .scroll-down button //
+//	$('.scroll-down').click(function() {
+//		var nextSection = $(this).parents('section').next('section');
+//		var nextSectionOffset = nextSection.pageYOffset;
+//		console.log(nextSectionOffset);
+//		$(this).parents('section').animate({
+//			display: 'absolute',
+//			top: '-' + nextSectionTop
+//		});
+//	});
+	
+//	$('.about-link, .scroll-down').click(function() {
+////		$('.about')
+//	}).animate({
+//			scrollTop: $('.about').offset().top
+//		}, 1000);;
+
+	
 });
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+//	document.getElementById('about-link').addEventListener('click', function() {
+//		document.getElementById('about').scrollByPages(1);
+//		//scrollIntoView('true');
+//	});
 
 
 //$(function() {

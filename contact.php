@@ -102,3 +102,17 @@
 	<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
 		</form>
 	</section>
+	
+
+
+
+
+
+
+		 <!--<div class="container project-container col-md-6">
+			<div class="thumbnail">
+				<iframe src="<?= $value['projecturl']; ?>" frameborder="0"></iframe>
+			
+				<a href="#" class="image"></a>
+			</div>
+		</div>-->

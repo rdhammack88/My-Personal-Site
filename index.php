@@ -5,12 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dustin Hammack">
 	<meta name="description" content="A portfolio site for Dustin Hammack!">
-	
 	<title>Dustin Hammack</title>
-	
-	<!-- Minified CSS -->
+	<!-- Minified Bootstrap Styles -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	
+	<!-- Custom Style Sheets -->
 	<link rel="stylesheet" href="styles/styles.css">
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,7 +19,7 @@
 </head>
 
 <body class="">
-
+<!-- Removed Bootstrap-Collapsible Navigation Code -->
 <!--<div class="row" id="headingNav" >
 	<div class="navbar nav-container col-xs-1 col-sm-5 col-sm-push-1 col-md-6 col-md-push-1" id="mainNav">
 		<nav class=" nav-pills">
@@ -52,16 +50,16 @@
 	</div>
 </div>-->
 
-
+<!-- Main Navigation -->
 <nav>
 	<ul>
 		<li><a href="#main" id="home-link">Home</a></li>
 		<li><a href="#about" id="about-link">About</a></li>
-		<li><a href="#projects" id="project-link">Projects</a></li>
+		<li><a href="#projects" id="project-link">Portfolio</a></li>
 		<li><a href="#contact" id="contact-link">Contact</a></li>
 	</ul>
 </nav>
-
+<!-- Main Body Content -->
 <main>
 	<!-- Main Content Section -->
 	<section id="main">
@@ -80,138 +78,156 @@
 					<span>&lt;</span><hr><span>&gt;</span>
 					<h4>Full Stack Web Developer</h4>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quia quam veritatis, excepturi, cum tempore nisi dolores autem nemo earum!
+						
 					</p>
 				</div>
 			</div>
+<!--			<button class="scroll-down">&darr;</button>-->
 		</div>
+		<p class="scroll-down-button">
+			<a href="#about" class="scroll-down btn">&darr;</a> <!-- role="button" -->
+		</p>
 	</section>
 
 	<!-- About Me Section -->
 	<section id="about">
 		<div id="about-wrapper">
-		<h2>Who am I?</h2>
-		<p>I am a 28 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
-		<ul style="list-style: none; color: antiquewhite;">
-			<li>HTML</li>
-			<li>CSS</li>
-			<li>Bootstrap</li>
-			<li>SASS</li>
-			<li>Javascript</li>
-			<li>jQuery</li>
-			<li>PHP</li>
-			<li>MySQL</li>
-		</ul>
+<!--			<a href="#contact" class="scroll-up btn">&uarr;</a>-->
+			<p class="scroll-up-button">
+				<a href="#main" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
+			</p>
+			<h2>Who am I?</h2>
+			<p>I am a 28 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Bootstrap</li>
+				<li>SASS</li>
+				<li>Javascript</li>
+				<li>jQuery</li>
+				<li>PHP</li>
+				<li>MySQL</li>
+			</ul>
+
+			<h2>Background</h2>
+
+			<p>I currently have experience using the LAMP stack. 
+			HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. </p>
+			<br><br>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>		
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>
 
 	
-		<h2>Background</h2>
-
-		<p>I currently have experience using the LAMP stack. 
-		HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. </p>
-		<br><br>
-		 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>		
-		
-
-
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>
-
-
-<!--
-		<h2>Follow Me!</h2>
-		<img src="images/icons/facebook-icon.png" alt="facebook-icon">
-		<img src="images/icons/instagram-icon.png" alt="instagram-icon">
-		<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
--->
-		
+			<h2>Follow Me!</h2>
+			<img src="images/icons/facebook-icon.png" alt="facebook-icon">
+			<img src="images/icons/instagram-icon.png" alt="instagram-icon">
+			<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
+	
+			
 		</div>
-
+		
+		<p class="scroll-down-button">
+			<a href="#projects" class="scroll-down btn">&darr;</a>
+		</p>
 	</section>
 
 	<!-- Project Portfolio Section -->
 	<section id="projects">
-		<h2>Projects</h2>
-		
-		<?php 
-			$jsonFile = file_get_contents("js/projects.json");
-			$jsonData = json_decode($jsonFile, true);
-			foreach($jsonData['projects'] as $key => $value) {
-		 ?>
-		 
-		 <div class="project-container col-xs-12 col-md-3 col-md-offset-1 col-lg-3"> 
-		 <!-- col-sm-8 col-sm-offset-2">-->
-		 	<div class="project-overlay"></div>
-			 <div class="project-description">
-			 	<h3><?= $value['projectname']; ?></h3>
+<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
+			<p class="scroll-up-button">
+				<a href="#about" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
+			</p>
+		<div id="project-wrapper">
+			<h2 class="text-center">Portfolio</h2>
+
+			<?php 
+				$jsonFile = file_get_contents("js/projects.json");
+				$jsonData = json_decode($jsonFile, true);
+				foreach($jsonData['projects'] as $key => $value) {
+			 ?>
+
+			 <div class="project-container col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2"> 
+			 <!-- col-sm-8 col-sm-offset-2">-->
+				<div class="project-overlay">
+					<button type="button" class="project-details btn btn-danger">More Details</button>
+				</div>
+				 <div class="project-description">
+					<h3><?= $value['projectname']; ?></h3>
+				 </div>
+				 <img src="<?= $value['projectimage']; ?>" alt="">
 			 </div>
-		 </div>
 
-		 <!--<div class="container project-container col-md-6">
-			<div class="thumbnail">
-				<iframe src="<?= $value['projecturl']; ?>" frameborder="0"></iframe>
-			
-				<a href="#" class="image"></a>
-			</div>
-		</div>-->
 
-		<?php } ?>
+			<?php } ?>
+		</div>
+		
+		<p class="scroll-down-button">
+			<a href="#contact" class="scroll-down btn">&darr;</a>
+		</p>
 	</section>
 
 	<!-- Contact Form Section -->	
-	<section class="bottom" id="contact"> <!-- container id="contact">-->
-		<h2 class="text-center text-info">Contact me for work</h2> <!--<br/><br/>-->	
-		<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<p><span class="text-danger">&#42; All fields required</span></p>
-			<div class="form-group">
+	<section id="contact">
+<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
+			<p class="scroll-up-button">
+				<a href="#projects" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
+			</p>
+		<div id="contact-wrapper">
+			<h2 class="text-center text-info">Contact me for work</h2>	
+			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+				<p><span class="text-danger">&#42; All fields required</span></p>
+				<div class="form-group">
 
-				<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
-	<!--			<small class="text-danger">* </small>-->
-	<!--			<small class="text-danger nameError">Required</small>-->
-				</label>
-				<input type="text" class="form-control" id="name" name="name" required>
-			</div>
-			<div class="form-group">
-				<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
-	<!--			<small class="text-danger">* </small>-->
-	<!--			<small class="text-danger emailError">Required</small>-->
-				</label>
-				<input type="text" class="form-control" id="email" name="email" required>
-			</div>
-			<div class="form-group">
-				<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
-	<!--			<small class="text-danger">* </small>-->
-	<!--			<small class="text-danger emailError">Required</small>-->
-				</label>
-				<input type="text" class="form-control" id="subject" name="subject">
-			</div>
-			<div class="form-group">
-				<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
-	<!--			<small class="text-danger">* </small>-->
-	<!--			<small class="text-danger emailError">Required</small>-->
-				</label>
-				<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
-			</div>
-	<!--		<p><span class="text-danger">All fields required</span></p>-->
-	<!--		<p><span class="text-danger">* = Required</span></p>-->
-	<!--		<span class="text-danger">*</span>-->
-			<br/>
+					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger nameError">Required</small>-->
+					</label>
+					<input type="text" class="form-control" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger emailError">Required</small>-->
+					</label>
+					<input type="text" class="form-control" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger emailError">Required</small>-->
+					</label>
+					<input type="text" class="form-control" id="subject" name="subject">
+				</div>
+				<div class="form-group">
+					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
+		<!--			<small class="text-danger">* </small>-->
+		<!--			<small class="text-danger emailError">Required</small>-->
+					</label>
+					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
+				</div>
+		<!--		<p><span class="text-danger">All fields required</span></p>-->
+		<!--		<p><span class="text-danger">* = Required</span></p>-->
+		<!--		<span class="text-danger">*</span>-->
+				<br/>
 
-			<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
-	<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
-		</form>
+				<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
+		<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
+			</form>
+		</div>
 	</section>
 </main>
 
 <!-- Scripts -->
 <!-- Include JQuery -->
-<!--	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+<script src="js/jquery-2.2.4.js"></script>
 
 <!-- jQuery CDN -->
 <script
-src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-crossorigin="anonymous"></script>
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 <!-- Minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Custom JavaScript -->

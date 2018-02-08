@@ -1,9 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-	var main = document.getElementById('main');
-	window.document.body.style.overflowY = 'hidden';
+	function hiddenOverflow() {
+		if(window.innerWidth > 768) {
+			window.document.body.style.overflowY = 'hidden';
+		} else {
+			window.document.body.style.overflowY = 'auto';
+		}
+	}
 	
-	console.log(main);
+	hiddenOverflow();
+	window.addEventListener('resize', hiddenOverflow);
 });
 
 

@@ -63,6 +63,7 @@
 </nav>
 
 <main>
+	<!-- Main Content Section -->
 	<section id="main">
 		<div id="home-wrapper">
 			<div id="home-left">
@@ -86,6 +87,7 @@
 		</div>
 	</section>
 
+	<!-- About Me Section -->
 	<section id="about">
 		<div id="about-wrapper">
 		<h2>Who am I?</h2>
@@ -127,15 +129,17 @@
 
 	</section>
 
+	<!-- Project Portfolio Section -->
 	<section id="projects">
-	
+		<h2>Projects</h2>
+		
 		<?php 
 			$jsonFile = file_get_contents("js/projects.json");
 			$jsonData = json_decode($jsonFile, true);
 			foreach($jsonData['projects'] as $key => $value) {
 		 ?>
 		 
-		 <div class="project-container col-xs-12"> 
+		 <div class="project-container col-xs-12 col-md-3 col-md-offset-1 col-lg-3"> 
 		 <!-- col-sm-8 col-sm-offset-2">-->
 		 	<div class="project-overlay"></div>
 			 <div class="project-description">
@@ -154,10 +158,8 @@
 		<?php } ?>
 	</section>
 
-<!-- Contact Code Goes Here -->
-<!--  col-xs-12 col-md-offset-1 col-md-6 col-md-offset-3" -->
-	
-<section class="bottom" id="contact"> <!-- container id="contact">-->
+	<!-- Contact Form Section -->	
+	<section class="bottom" id="contact"> <!-- container id="contact">-->
 		<h2 class="text-center text-info">Contact me for work</h2> <!--<br/><br/>-->	
 		<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<p><span class="text-danger">&#42; All fields required</span></p>

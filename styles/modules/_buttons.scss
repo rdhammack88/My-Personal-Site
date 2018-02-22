@@ -1,0 +1,53 @@
+%scroll-btn-parent {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: left;
+	padding-left: 20px;
+}
+
+%scroll-btns {
+	position: absolute;
+//	left: 48%; // 46.5vw;
+	background: rgba(220, 220, 220, 0.8); // 0.4);
+	border: .5px solid #000;
+	border-radius: 5px;
+	margin: 0 auto 5px;
+	font-size: 1.6rem; //2.2em;
+	color: $darkblue;
+	width: 2em;
+	padding: 5px;
+	animation: scroll-btn 1s infinite; //alternate
+	border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+}
+		
+.scroll-up-button {
+	display: none;
+	@extend %scroll-btn-parent;
+	.scroll-up {
+		@extend %scroll-btns;
+		top: 0;
+	}
+
+	@include break(768px) {
+		display: block;
+		top: 10px;
+	}
+}
+
+.scroll-down-button {
+	display: none;
+	@extend %scroll-btn-parent;
+
+	.scroll-down {
+		@extend %scroll-btns;
+		bottom: 0;
+		left: 48%; // 46.5vw;
+	}
+
+	@include break(768px) {
+		display: block;
+//			bottom: 0;
+//			left: 48%; // 46.5vw;
+	}
+}

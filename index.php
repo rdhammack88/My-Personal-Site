@@ -52,12 +52,19 @@
 
 <!-- Main Navigation -->
 <nav>
-	<ul>
-		<li><a href="#main" id="home-link">Home</a></li>
-		<li><a href="#about" id="about-link">About</a></li>
-		<li><a href="#projects" id="project-link">Portfolio</a></li>
-		<li><a href="#contact" id="contact-link">Contact</a></li>
-	</ul>
+	<div class="collapsed-nav">
+		<span class="bar-icon"></span>
+		<span class="bar-icon"></span>
+		<span class="bar-icon"></span>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="#main" id="home-link">Home</a></li>
+			<li><a href="#about" id="about-link">About</a></li>
+			<li><a href="#projects" id="project-link">Portfolio</a></li>
+			<li><a href="#contact" id="contact-link">Contact</a></li>
+		</ul>
+	</div>
 </nav>
 <!-- Main Body Content -->
 <main>
@@ -115,9 +122,9 @@
 			HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. </p>
 			<br><br>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>		
+<!--			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>		-->
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>
+<!--			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>-->
 
 	
 			<h2>Follow Me!</h2>
@@ -145,13 +152,18 @@
 			<?php 
 				$jsonFile = file_get_contents("js/projects.json");
 				$jsonData = json_decode($jsonFile, true);
+				$x = 0;
+				$y = 0;
 				foreach($jsonData['projects'] as $key => $value) {
 			 ?>
 
-			 <div class="project-container col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2"> 
+			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2"> 
 			 <!-- col-sm-8 col-sm-offset-2">-->
 				<div class="project-overlay">
-					<button type="button" class="project-details btn btn-danger">More Details</button>
+				<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" /> <!-- -->
+          		<label class="button" for="project<?php echo $y++; ?>">
+					<a  class="project-details btn btn-danger">More Details</a>
+				</label>
 				</div>
 				 <div class="project-description">
 					<h3><?= $value['projectname']; ?></h3>
@@ -160,6 +172,9 @@
 			 </div>
 
 
+			<div class="project-modal"></div>
+			<div class="overlay"></div>
+		
 			<?php } ?>
 		</div>
 		

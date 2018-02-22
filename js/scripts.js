@@ -13,12 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	window.addEventListener('resize', hiddenOverflow);
 	
 	$('.project-container').hover(function() {
-		$(this).children('.project-overlay').fadeToggle(100);
+//		$(this).children('.project-overlay').fadeToggle(100);
 	}).blur(function() {
 //		$(this).children('.project-overlay').fadeOut();
 	})
 	
-	
+	$('.collapsed-nav').click(function() {
+		$('span.bar-icon').toggleClass('rotated');
+		$('.navbar').toggleClass('display');
+	});
 	
 	
 	
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		e.preventDefault();
 	});
 	// On click of each project, display an overlay //
-	$('.project-details').click(function(e) {
+	$('.project-detailss').click(function(e) {
 		e.preventDefault();
 		
 		//////	Set variables	//////		

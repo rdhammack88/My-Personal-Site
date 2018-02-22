@@ -1,0 +1,28 @@
+
+		{
+			"projectname": "Fat Burger",
+			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
+			"completed": "false",
+			"projectimage": "images/project_images/fat-burger-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Fat_Burger/",
+			"githuburl": "https://github.com/rdhammack88/Fat_Burger",
+			"description": "Fat Burger Restaurant."
+		},
+		{
+			"projectname": "Weather Fetcher",
+			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
+			"completed": "false",
+			"projectimage": "images/project_images/weatherFetcher-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Weather_Fetcher/",
+			"githuburl": "https://github.com/rdhammack88/Weather-Fetcher",
+			"description": "Check your local weather."
+		},
+		{
+			"projectname": "Photography Portfolio",
+			"techused": "HTML/HTML5, SCSS, Javascript",
+			"completed": "true",
+			"projectimage": "images/project_images/photography-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Photography_Portfolio",
+			"githuburl": "https://github.com/rdhammack88/Photography_Portfolio",
+			"description": "An image gallery."
+		},

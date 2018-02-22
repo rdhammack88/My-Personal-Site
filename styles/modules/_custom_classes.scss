@@ -1,0 +1,132 @@
+.branding-ad {
+	background: $red;
+	text-align: center;
+	margin: 0;
+	color: #eee;
+	width: 100%;
+	height: 3em;
+	padding-top: 3px;
+	font-size: 1.1em;
+	position: relative;
+	top: 0;
+	left: 0;
+	
+	p {
+		font-size: .9em;
+	}
+}
+
+.close {
+	font-size: 1.3em;
+	padding: 0 10px 0 0;
+	margin: 0;
+	color: #333;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.input-group {
+	display: inline-block;
+//	width: 20%;
+	
+	> .input-group-btn {
+//		line-height: 1.5em;
+//		border: none;
+//		border-left: 1px solid #999;
+//		border-radius: 0 7px 7px 0;
+	}
+}
+
+.nav-container {
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.brand-logo {
+//	padding:  15px 15px 15px 5.4%;
+}
+
+.btn {
+	
+}
+
+.collapsed-nav {
+	display: block;
+	padding: 15px 15px 10px 10px;
+	cursor: pointer;
+	z-index: 9999;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	@include break(768px) {
+		display: none;
+	}
+
+	span.bar-icon {
+		display: block;
+		width: 3rem; // 20px;
+		height: .5rem; // 3px; 
+		margin-bottom: .5rem;
+		background: #000;
+		border-radius: 25%;
+		position: relative;
+		transition: all .2s ease;
+		
+		&.rotated:nth-child(1) {
+			transform: rotateZ(45deg);
+			transition: all .4s ease;
+			margin-top: 1rem;
+			background: #eee;
+		}
+		&.rotated:nth-child(3) {
+			transform: rotateZ(-45deg);
+			transition: all .4s ease;
+			top: -10px;
+			background: #eee;
+		}
+		&.rotated:nth-child(2) {
+			display: none;
+		}
+	}
+}
+
+.navbar {
+	display: none;
+
+	@include break(768px) {
+		display: block;
+	}
+	
+	&.display {
+		background: #333;
+		color: #eee;
+		display: block;
+		width: 100vw;
+		left: 0;
+		
+		li {
+			display: block;
+			padding: 15px 0 0;
+//			box-sizing: border-box;
+			
+			& a {
+				display: inline-block;
+				width: 100%;
+				font-size: 1.5em;
+			}
+		}
+		
+		> ul li:nth-of-type(2)::before,
+		> ul li:nth-of-type(2)::after,
+		> ul li:nth-of-type(3)::after  {
+			content: "";
+			display: none;
+		}
+	}
+}

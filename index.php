@@ -160,10 +160,10 @@
 			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2"> 
 			 <!-- col-sm-8 col-sm-offset-2">-->
 				<div class="project-overlay">
-				<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" /> <!-- -->
-          		<label class="button" for="project<?php echo $y++; ?>">
-					<a  class="project-details btn btn-danger">More Details</a>
-				</label>
+					<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" /> <!-- -->
+					<label class="button" for="project<?php echo $y++; ?>">
+						<a  class="project-details btn btn-danger">More Details</a>
+					</label>
 				</div>
 				 <div class="project-description">
 					<h3><?= $value['projectname']; ?></h3>
@@ -173,9 +173,15 @@
 
 
 			<div class="project-modal"></div>
-			<div class="overlay"></div>
 		
 			<?php } ?>
+			
+			<div class="overlays">
+				<div>
+					<div class="overlay"></div>
+				</div>
+			</div>
+			
 		</div>
 		
 		<p class="scroll-down-button">
@@ -190,9 +196,9 @@
 				<a href="#projects" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
 			</p>
 		<div id="contact-wrapper">
-			<h2 class="text-center text-info">Contact me for work</h2>	
+			<!-- Contact me for work -->
+			<h2 class="text-center">Lets work together</h2>	
 			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-				<p><span class="text-danger">&#42; All fields required</span></p>
 				<div class="form-group">
 
 					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,13 +214,13 @@
 					</label>
 					<input type="text" class="form-control" id="email" name="email" required>
 				</div>
-				<div class="form-group">
-					<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;
+				<!--<div class="form-group">
+					<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;-->
 		<!--			<small class="text-danger">* </small>-->
 		<!--			<small class="text-danger emailError">Required</small>-->
-					</label>
+					<!--</label>
 					<input type="text" class="form-control" id="subject" name="subject">
-				</div>
+				</div>-->
 				<div class="form-group">
 					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
 		<!--			<small class="text-danger">* </small>-->
@@ -226,8 +232,9 @@
 		<!--		<p><span class="text-danger">* = Required</span></p>-->
 		<!--		<span class="text-danger">*</span>-->
 				<br/>
+				<p><span class="">&#42; All fields required</span></p>
 
-				<button type="submit" class="btn btn-info btn-lg col-xs-4">Send</button>
+				<button type="submit" class="btn btn-lg col-xs-4">Send</button>
 		<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
 			</form>
 		</div>

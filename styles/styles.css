@@ -377,12 +377,15 @@ div#project-wrapper {
     padding: 0;
     margin: 0 0 25px; }
   div#project-wrapper .project-container {
-    height: 400px;
+    height: 300px;
     display: inline-block;
     margin-bottom: 50px;
     border: 1px solid #000;
     background: rgba(42, 42, 42, 0.5);
     overflow: hidden; }
+    @media (min-width: 768px) {
+      div#project-wrapper .project-container {
+        height: 220px; } }
     div#project-wrapper .project-container::after {
       position: absolute;
       display: block;
@@ -408,9 +411,6 @@ div#project-wrapper {
     div#project-wrapper .project-container:hover .project-overlay {
       background: rgba(42, 42, 42, 0.5);
       transform: translate(0, 0); }
-    @media (min-width: 768px) {
-      div#project-wrapper .project-container {
-        height: 220px; } }
     div#project-wrapper .project-container img {
       position: absolute;
       top: 0;

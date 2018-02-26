@@ -162,10 +162,12 @@
 			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2" data-project-name="<?= $value['shortname']; ?>"> 
 			 <!-- col-sm-8 col-sm-offset-2">-->
 				<div class="project-overlay">
-					<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" /> <!-- -->
+<!--
+					<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" />  
 					<label class="button" for="project<?php echo $y++; ?>">
+-->
 						<a  class="project-details btn btn-lg btn-danger">More Details</a>
-					</label>
+<!--					</label>-->
 				</div>
 				 <div class="project-description">
 					<h3><?= $value['projectname']; ?></h3>

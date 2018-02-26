@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 	});	// End of li click
 	
+	// On click of close for project-modal-overlay //
 	$('.close').click(function(e) {
 		$('.overlay').hide();
 	});

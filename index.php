@@ -128,9 +128,11 @@
 
 	
 			<h2>Follow Me!</h2>
+<!--
 			<img src="images/icons/facebook-icon.png" alt="facebook-icon">
 			<img src="images/icons/instagram-icon.png" alt="instagram-icon">
 			<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
+-->
 	
 			
 		</div>
@@ -157,12 +159,12 @@
 				foreach($jsonData['projects'] as $key => $value) {
 			 ?>
 
-			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2"> 
+			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2" data-project-name="<?= $value['shortname']; ?>"> 
 			 <!-- col-sm-8 col-sm-offset-2">-->
 				<div class="project-overlay">
 					<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" /> <!-- -->
 					<label class="button" for="project<?php echo $y++; ?>">
-						<a  class="project-details btn btn-danger">More Details</a>
+						<a  class="project-details btn btn-lg btn-danger">More Details</a>
 					</label>
 				</div>
 				 <div class="project-description">
@@ -171,16 +173,21 @@
 				 <img src="<?= $value['projectimage']; ?>" alt="">
 			 </div>
 
-
-			<div class="project-modal"></div>
+			<div class="overlay" id="<?= $value['shortname']; ?>">
+				<div class="project-modal">
+					<p class="close">X</p>
+					<h2><?= $value['projectname']; ?></h2>
+					<p><strong>Technology Used:</strong> <?= $value['techused']; ?></p>
+					<p><strong>Project Description:</strong> <?= $value['description']; ?></p>
+					<p><a href="<?= $value['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Go to project</a></p>
+					<p><a href="<?= $value['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Go to code</a></p>
+				</div>
+			</div>
+			
 		
 			<?php } ?>
 			
-			<div class="overlays">
-				<div>
-					<div class="overlay"></div>
-				</div>
-			</div>
+			
 			
 		</div>
 		

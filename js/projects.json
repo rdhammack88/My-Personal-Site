@@ -2,6 +2,7 @@
 	"projects": [
 		{
 			"projectname": "Blogger",
+			"shortname": "blogger",
 			"techused": "PHP, MySQL, HTML/HTML5, CSS/CSS3, Javascript",
 			"completed": "false",
 			"projectimage": "images/project_images/blogger-tn.png",
@@ -11,6 +12,7 @@
 		},
 		{
 			"projectname": "Quizzer",
+			"shortname": "quizzer",
 			"techused": "PHP, MySQL, HTML/HTML5, SCSS, Javascript",
 			"completed": "false",
 			"projectimage": "images/project_images/quizzer-tn.png",
@@ -20,6 +22,7 @@
 		},
 		{
 			"projectname": "Movie Finder",
+			"shortname": "movie_finder",
 			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
 			"completed": "false",
 			"projectimage": "images/project_images/movieFinder-tn.png",
@@ -29,6 +32,7 @@
 		},
 		{
 			"projectname": "Bomber Skateboard Shop",
+			"shortname": "bomber_skateboard_shop",
 			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
 			"completed": "false",
 			"projectimage": "images/project_images/bomberSkateShop-tn.png",
@@ -38,6 +42,7 @@
 		},
 		{
 			"projectname": "Quote Generator",
+			"shortname": "quote_generator",
 			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
 			"completed": "true",
 			"projectimage": "images/project_images/quoteGenerator-tn.png",
@@ -47,6 +52,7 @@
 		},
 		{
 			"projectname": "Time Calculator",
+			"shortname": "time_calculator",
 			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
 			"completed": "true",
 			"projectimage": "images/project_images/timeCalculator-tn.png",

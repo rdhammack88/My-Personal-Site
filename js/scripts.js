@@ -92,7 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //			console.log($('.navbar a:not('+targetId+')'));
 			$('.navbar a:not('+targetId+')').css({
 				'background': 'none',
-				'color': '#337ab7'
+				'color': '#555'
+//				'color': '#337ab7'
 			});
 			
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

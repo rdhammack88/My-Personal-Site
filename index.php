@@ -69,7 +69,7 @@
 <!-- Main Body Content -->
 <main>
 	<!-- Main Content Section -->
-	<section id="main">
+	<section id="main" class="main">
 		<div id="home-wrapper">
 			<div id="home-left">
 				<div class="left-cover"></div>
@@ -84,9 +84,6 @@
 					<h2>Dustin Hammack</h2>
 					<span>&lt;</span><hr><span>&gt;</span>
 					<h4>Full Stack Web Developer</h4>
-					<p>
-						
-					</p>
 				</div>
 			</div>
 <!--			<button class="scroll-down">&darr;</button>-->
@@ -97,7 +94,7 @@
 	</section>
 
 	<!-- About Me Section -->
-	<section id="about">
+	<section id="about" class="about">
 		<div id="about-wrapper">
 <!--			<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
@@ -143,7 +140,7 @@
 	</section>
 
 	<!-- Project Portfolio Section -->
-	<section id="projects">
+	<section id="projects" class="projects">
 <!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
 				<a href="#about" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
@@ -199,7 +196,7 @@
 	</section>
 
 	<!-- Contact Form Section -->	
-	<section id="contact">
+	<section id="contact" class="contact">
 <!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
 				<a href="#projects" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
@@ -211,40 +208,29 @@
 				<div class="form-group">
 
 					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger nameError">Required</small>-->
+					<!--<small class="text-danger">* </small>
+					<small class="text-danger nameError">Required</small>-->
 					</label>
 					<input type="text" class="form-control" id="name" name="name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger emailError">Required</small>-->
+					<!--<small class="text-danger">* </small>
+					<small class="text-danger emailError">Required</small>-->
 					</label>
 					<input type="text" class="form-control" id="email" name="email" required>
 				</div>
-				<!--<div class="form-group">
-					<label for="subject">Subject: &nbsp;&nbsp;&nbsp;&nbsp;-->
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger emailError">Required</small>-->
-					<!--</label>
-					<input type="text" class="form-control" id="subject" name="subject">
-				</div>-->
 				<div class="form-group">
 					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
-		<!--			<small class="text-danger">* </small>-->
-		<!--			<small class="text-danger emailError">Required</small>-->
+					<!--<small class="text-danger">* </small>
+					<small class="text-danger emailError">Required</small>-->
 					</label>
 					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
 				</div>
-		<!--		<p><span class="text-danger">All fields required</span></p>-->
-		<!--		<p><span class="text-danger">* = Required</span></p>-->
-		<!--		<span class="text-danger">*</span>-->
 				<br/>
-				<p><span class="">&#42; All fields required</span></p>
+				<p><span class="text-danger">&#42; All fields required</span></p>
 
-				<button type="submit" class="btn btn-lg col-xs-4">Send</button>
-		<!--		<button type="button" class="btn btn-warning btn-lg col-xs-4 col-xs-offset-4">Cancel</button>-->
+				<button type="submit" class="btn btn-default btn-lg col-xs-4">Send</button>
 			</form>
 		</div>
 	</section>

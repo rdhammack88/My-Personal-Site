@@ -145,18 +145,35 @@ section {
 //	height: 100%;
 //	min-height: 600px;
 //	overflow: auto;
+//		height: 100vh;
+		height: 100%;
+//		height: 50vh;
+	
+	&#main {
 		height: 100vh;
-	&:nth-of-type(3) {
-		height: 310vh;
 	}
+	
+	&#about {
+//		padding-top: 10vh;
+		height: 100vh;
+	}
+	
+//	&:nth-of-type(3) {
+	&#projects {
+		height: 350vh;
+//		height: 100%;
+	}
+	
 	
 	@include break(768px) {
 		position: relative;
 		top: 0;
 		left: 0;
+		height: 100vh;
 		
-		&:nth-of-type(3) {
-			height: 100vh;	
+//		&:nth-of-type(3) {
+		&#projects {
+			height: 100vh;
 		}
 	}
 }
@@ -267,6 +284,7 @@ div#home-wrapper {
 			
 			@include break(300px, 568px) {
 				width: 70vw;
+				height: 5em;
 				position: absolute;
 				left: -40vw; // -150px; // -200px;
 				top: 65vh;
@@ -338,11 +356,12 @@ div#about-wrapper {
 	background: rgba(20,20,20,0.9);
 	color: #eee;
 	font-size: 1.4rem;
-	line-height: 1.8em;
+//	line-height: 1.8em;
 	
 	h2 {
 		color: $red;
 		margin: 30px auto 10px;
+		
 	}
 	
 	p:not(:first-of-type) {
@@ -463,6 +482,16 @@ div#project-wrapper {
 	
 	.overlay {
 		display: none;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+		overflow: hidden;
+		background: rgba(22, 22, 22, 0.8);
 	}
 	
 	.project-modal {
@@ -470,6 +499,7 @@ div#project-wrapper {
 //		position: fixed;
 //		pointer-events: none;
 //		opacity: 0;
+		pointer-events: all;
 		box-sizing: border-box;
 		text-align: center;
 		position: absolute;
@@ -484,11 +514,11 @@ div#project-wrapper {
 		-moz-transform: translate(-50%, -50%) scale(1);
 		-o-transform: translate(-50%, -50%) scale(1);
 		transform: translate(-50%, -50%) scale(1);
-
-		-webkit-transition: transform 0.5s ease, opacity 0.5s ease;
-		-moz-transition: transform 0.5s ease, opacity 0.5s ease;
-		-o-transition: transform 0.5s ease, opacity 0.5s ease;
-		transition: transform 0.5s ease, opacity 0.5s ease;
+//
+//		-webkit-transition: transform 0.5s ease, opacity 0.5s ease;
+//		-moz-transition: transform 0.5s ease, opacity 0.5s ease;
+//		-o-transition: transform 0.5s ease, opacity 0.5s ease;
+//		transition: transform 0.5s ease, opacity 0.5s ease;
 
 		transition-delay: 0.1s;
 		
@@ -514,6 +544,7 @@ div#project-wrapper {
 div#contact-wrapper {
 //	margin-top: 220px;
 	padding: 200px 0 100px;
+		background-color: $lightblue1;
 	
 	@include break(768px) {
 		height: 100%;
@@ -525,8 +556,8 @@ div#contact-wrapper {
 //		width: 80%;
 //		height: 80%;
 //		margin: 10% auto;
+//		padding: 20px 0 20px;
 		color: #eee;
-		background-color: $lightblue1;
 		border-color: $lightblue1;
 	}
 	
@@ -538,7 +569,8 @@ div#contact-wrapper {
 		margin: 0;
 		
 		& ~ p {
-			color: #ff0303;
+//			color: #ff0303;
+			padding-bottom: 10px;
 			font-size: 1.4rem;
 		}
 	}

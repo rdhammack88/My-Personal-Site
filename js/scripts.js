@@ -12,17 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Add event listener to check for resize of screen to enabel/disable scroll //
 	window.addEventListener('resize', hiddenOverflow);
 	
-	$('.project-container').hover(function() {
-//		$(this).children('.project-overlay').fadeToggle(100);
-	}).blur(function() {
-//		$(this).children('.project-overlay').fadeOut();
-	})
-	
+	// On click of hamburger icon, animate icon to X close button icon //
 	$('.collapsed-nav').click(function() {
 		$('span.bar-icon').toggleClass('rotated');
 		$('.navbar').toggleClass('display');
 	});
-	
 	
 	// On click of each project, display an overlay //
 	$('.project-details').click(function(e) {
@@ -32,22 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		var projectName = $(this).parents('.project-container').attr('data-project-name');
 		
 		$('.overlay#'+projectName).css({
-			'display': 'block',
-//			'width': window.innerWidth + 'px',
-//			'height': window.innerHeight + 'px',
-//			'z-index': 99999,
-//			'position': 'absolute',
-////			'top': pageYOffset,
-//			'right': 0,
-////			'bottom': 0,
-//			'left': 0,
-//			'background': 'rgba(22, 22, 22, 0.8)'
+			'display': 'block'
 		});
-		
-		$('.project-modal').css({
-//			'display': 'block'
-		});
-				
 	});	// End of .project-details button click
 	
 	// On click of close for project-modal-overlay //
@@ -101,6 +81,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		) {
 		  // Figure out element to scroll to
 		  var target = $(this.hash);
+			
+			var targetId = '#' + target.attr('id');
+			targetId += '-link';
+			$(targetId).css({
+				'background': '#333',
+				'color': '#eee'
+			});
+			
+//			console.log($('.navbar a:not('+targetId+')'));
+			$('.navbar a:not('+targetId+')').css({
+				'background': 'none',
+				'color': '#337ab7'
+			});
+			
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 		  // Does a scroll target exist?
 		  if (target.length) {

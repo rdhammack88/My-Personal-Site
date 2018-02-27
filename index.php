@@ -59,9 +59,9 @@
 	</div>
 	<div class="navbar">
 		<ul>
-			<li><a href="#main" id="home-link">Home</a></li>
+			<li><a href="#main" id="main-link">Home</a></li>
 			<li><a href="#about" id="about-link">About</a></li>
-			<li><a href="#projects" id="project-link">Portfolio</a></li>
+			<li><a href="#projects" id="projects-link">Portfolio</a></li>
 			<li><a href="#contact" id="contact-link">Contact</a></li>
 		</ul>
 	</div>

@@ -103,7 +103,7 @@
 
 .navbar {
 	display: none;
-	opacity: 0;
+//	opacity: 0;
 //	transform: translate(0, -100%);
 	transition: all 3s ease;
 
@@ -117,7 +117,7 @@
 		display: block;
 		width: 100vw;
 		left: 0;
-		opacity: 1;
+//		opacity: 1;
 //		transform: translate(0, 0);
 	transition: all 3s ease;
 		

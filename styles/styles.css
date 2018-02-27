@@ -136,7 +136,6 @@
 
 .navbar {
   display: none;
-  opacity: 0;
   transition: all 3s ease; }
   @media (min-width: 768px) {
     .navbar {
@@ -147,7 +146,6 @@
     display: block;
     width: 100vw;
     left: 0;
-    opacity: 1;
     transition: all 3s ease; }
     .navbar.display li {
       display: block;
@@ -161,9 +159,6 @@
     .navbar.display > ul li:nth-of-type(3)::after {
       content: "";
       display: none; }
-
-* {
-  transition: all .5s ease-in-out; }
 
 body {
   margin: 0;
@@ -197,7 +192,8 @@ body {
 
 nav {
   z-index: 999;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: 300;
   text-align: center;
   position: fixed;
   top: 0;
@@ -206,27 +202,42 @@ nav {
     nav {
       width: 100vw;
       font-size: 1.2em; } }
+  @media (min-width: 768px) {
+    nav {
+      padding-top: 15px; } }
   @media (min-width: 868px) {
     nav {
-      font-size: 1.2em;
-      padding-top: 15px; } }
+      font-size: 1.4em; } }
+  @media (min-width: 905px) {
+    nav {
+      font-size: 1.5em; } }
+  @media (min-width: 1200px) {
+    nav {
+      font-size: 1.7em;
+      padding-top: 25px; } }
   nav .navbar {
     width: 50vw; }
-  nav .navbar > ul {
-    padding: 0; }
-  nav .navbar > ul li {
-    display: inline;
-    letter-spacing: .4em; }
-  nav .navbar > ul li:nth-of-type(2)::before,
-  nav .navbar > ul li:nth-of-type(2)::after,
-  nav .navbar > ul li:nth-of-type(3)::after {
-    content: '|';
-    padding: 0 12px; }
-    @media (min-width: 300px) and (max-width: 568px) {
-      nav .navbar > ul li:nth-of-type(2)::before,
-      nav .navbar > ul li:nth-of-type(2)::after,
-      nav .navbar > ul li:nth-of-type(3)::after {
-        padding: 0 6px; } }
+    nav .navbar > ul {
+      padding: 0; }
+    nav .navbar > ul li {
+      display: inline-block;
+      letter-spacing: .3em;
+      height: 2em; }
+      nav .navbar > ul li a {
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        padding: 0 5px; }
+      nav .navbar > ul li a:hover {
+        background: #333;
+        color: #eee;
+        text-decoration: none; }
+    nav .navbar > ul li:nth-of-type(2)::before, nav .navbar > ul li:nth-of-type(2)::after, nav .navbar > ul li:nth-of-type(3)::after {
+      content: '|';
+      padding: 0 8px; }
+      @media (min-width: 300px) and (max-width: 568px) {
+        nav .navbar > ul li:nth-of-type(2)::before, nav .navbar > ul li:nth-of-type(2)::after, nav .navbar > ul li:nth-of-type(3)::after {
+          padding: 0 6px; } }
 
 section {
   height: 100%; }

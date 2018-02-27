@@ -4,7 +4,7 @@
 @import "modules/_animations";
 @import "modules/_custom_classes";
 
-* { transition: all .5s ease-in-out; }
+//* { transition: all .1s ease-in-out; }
 
 body {
 //	width: 100vw;
@@ -89,54 +89,71 @@ body {
 }
 
 nav {
-//	width: 50vw; // 100vw;
-//	height: 5vh;
-//	padding: 12px 10px 0 0;
-//	text-align: center;
-//	font-size: .5em;
 	z-index: 999;
-	font-size: 1.1em;
+	font-size: 1.2em;
+	font-weight: 300;
 	text-align: center;
 	position: fixed;
 	top: 0;
 	right: 0;
 	
-//	background: #f00;
-	
 	@include break(300px, 568px) {
 		width: 100vw;
 		font-size: 1.2em;
-//		text-align: left;
+	}
+	
+	@include break(768px) {
+		padding-top: 15px;
 	}
 	
 	@include break(868px) {
-		font-size: 1.2em;
-//		padding-right: 35px;
-		padding-top: 15px;
+		font-size: 1.4em;
+	}
+	
+	@include break(905px) {
+		font-size: 1.5em;
+	}
+	
+	@include break(1200px) {
+		font-size: 1.7em;
+		padding-top: 25px;
 	}
 
 	.navbar {
-		width: 50vw; // 100vw;
-	}
+		width: 50vw;
+			
+		& > ul {
+			padding: 0;
+		}
 	
-	.navbar > ul {
-		padding: 0;
-	}
+		& > ul li {
+			display: inline-block;
+			letter-spacing: .3em;
+			height: 2em;
+			
+			& a {
+				display: inline-block;
+				height: 2em;
+				line-height: 2em;
+				padding: 0 5px;
+			}
+			
+			& a:hover {
+				background: #333;
+				color: #eee;
+				text-decoration: none;
+			}
+		}
 	
-	.navbar > ul li {
-		display: inline;
-//		font-size: 2.2em;
-		letter-spacing: .4em;
-	}
-	
-	.navbar > ul li:nth-of-type(2)::before,
-	.navbar > ul li:nth-of-type(2)::after,
-	.navbar > ul li:nth-of-type(3)::after {
-		content: '|';
-		padding: 0 12px;
-		
-		@include break(300px, 568px) {
-			padding: 0 6px;
+		& > ul li:nth-of-type(2)::before,
+		& > ul li:nth-of-type(2)::after,
+		& > ul li:nth-of-type(3)::after {
+			content: '|';
+			padding: 0 8px;
+
+			@include break(300px, 568px) {
+				padding: 0 6px;
+			}
 		}
 	}
 }

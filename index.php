@@ -89,7 +89,8 @@
 <!--			<button class="scroll-down">&darr;</button>-->
 		</div>
 		<p class="scroll-down-button">
-			<a href="#about" class="scroll-down btn">&darr;</a> <!-- role="button" -->
+<!--			<a href="#about" class="scroll-down btn">&darr;</a> -->
+			<!-- role="button" -->
 		</p>
 	</section>
 
@@ -98,7 +99,8 @@
 		<div id="about-wrapper">
 <!--			<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
-				<a href="#main" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
+<!--				<a href="#main" class="scroll-up btn">&uarr;</a> -->
+				<!-- role="button" -->
 			</p>
 			<h2>Who am I?</h2>
 			<p>I am a 28 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
@@ -135,7 +137,7 @@
 		</div>
 		
 		<p class="scroll-down-button">
-			<a href="#projects" class="scroll-down btn">&darr;</a>
+<!--			<a href="#projects" class="scroll-down btn">&darr;</a>-->
 		</p>
 	</section>
 
@@ -143,7 +145,8 @@
 	<section id="projects" class="projects">
 <!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
-				<a href="#about" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
+<!--				<a href="#about" class="scroll-up btn">&uarr;</a> -->
+				<!-- role="button" -->
 			</p>
 		<div id="project-wrapper"> <!-- class="container"  -->
 			<h2 class="text-center">Portfolio</h2>
@@ -192,6 +195,11 @@
 					<p><strong>Project Description:</strong> <?= $project['description']; ?></p>
 					<p><a href="<?= $project['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Check out the project</a></p>
 					<p><a href="<?= $project['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Check out the code</a></p>
+					
+					<?php if($project['completed'] === 'false') { ?>
+						<br/><br/><br/>
+						<p class="text-center">** This site is not 100% completed, and I am always adding new features and playing with the diplays.</p>
+					<?php } ?>
 				</div>
 			</div>
 			
@@ -205,39 +213,40 @@
 		</div>
 		
 		<p class="scroll-down-button">
-			<a href="#contact" class="scroll-down btn">&darr;</a>
+<!--			<a href="#contact" class="scroll-down btn">&darr;</a>-->
 		</p>
 	</section>
 
 	<!-- Contact Form Section -->	
-	<section id="contact" class="contact">
-<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
+<!--	<section id="contact" class="contact">
+<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>
 			<p class="scroll-up-button">
-				<a href="#projects" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
+<!--				<a href="#projects" class="scroll-up btn">&uarr;</a> 
+				<!-- role="button" 
 			</p>
 		<div id="contact-wrapper">
-			<!-- Contact me for work -->
+			<!-- Contact me for work 
 			<h2 class="text-center">Lets work together</h2>	
 			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 				<div class="form-group">
 
 					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
 					<!--<small class="text-danger">* </small>
-					<small class="text-danger nameError">Required</small>-->
+					<small class="text-danger nameError">Required</small>
 					</label>
 					<input type="text" class="form-control" id="name" name="name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
 					<!--<small class="text-danger">* </small>
-					<small class="text-danger emailError">Required</small>-->
+					<small class="text-danger emailError">Required</small>
 					</label>
 					<input type="text" class="form-control" id="email" name="email" required>
 				</div>
 				<div class="form-group">
 					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
 					<!--<small class="text-danger">* </small>
-					<small class="text-danger emailError">Required</small>-->
+					<small class="text-danger emailError">Required</small>
 					</label>
 					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
 				</div>
@@ -247,7 +256,7 @@
 				<button type="submit" class="btn btn-default btn-lg col-xs-4">Send</button>
 			</form>
 		</div>
-	</section>
+	</section> -->
 </main>
 
 <!-- Scripts -->

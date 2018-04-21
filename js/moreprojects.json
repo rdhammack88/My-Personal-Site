@@ -26,3 +26,26 @@
 			"githuburl": "https://github.com/rdhammack88/Photography_Portfolio",
 			"description": "An image gallery."
 		},
+,
+		"fcc": 
+		[{
+			"projectname": "Quote Generator",
+			"shortname": "quote_generator",
+			"techused": "HTML, CSS, Javascript",
+			"completed": "true",
+			"projectimage": "images/project_images/quoteGenerator-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Quote_Generator/",
+			"githuburl": "https://github.com/rdhammack88/FCC-quote_generator",
+			"description": "A random quote generator."
+		}],
+		"random":
+		[{
+			"projectname": "Time Calculator",
+			"shortname": "time_calculator",
+			"techused": "HTML5, CSS, Javascript",
+			"completed": "true",
+			"projectimage": "images/project_images/timeCalculator-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Time_Calculator/",
+			"githuburl": "https://github.com/rdhammack88/Time-Calculator",
+			"description": "A calculator for time."
+		}]

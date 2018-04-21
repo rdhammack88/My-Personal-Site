@@ -31,6 +31,16 @@
 			"githuburl": "https://github.com/rdhammack88/Movie-Finder",
 			"description": "Find information on almost any movie."
 		},
+		 {
+			"projectname": "Media Duration Calculator",
+			"shortname": "time_calc",
+			"techused": "HTML5, SASS, Javascript",
+			"completed": "false",
+			"projectimage": "images/project_images/mediaTimeCalculator-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Media-Duration-Calculator/",
+			"githuburl": "https://github.com/rdhammack88/Media-Duration-Calculator",
+			"description": "Calculate the times of your Media files, currently works with .mp3, .avi, .mov, .mpeg. You can choose to click the input button and upload the file information, or just simply drag-and-drop your files into the browser and the total time will be displayed."
+		 },
 		{
 			"projectname": "Bomber Skateboard Shop",
 			"shortname": "bomber_skateboard_shop",
@@ -40,28 +50,6 @@
 			"projecturl": "https://www.dustinhammack.com/projects/Bomber-Skateshop/",
 			"githuburl": "https://github.com/rdhammack88/Bomber-Skateshop",
 			"description": "Find information on almost any movie."
-		}],
-		"fcc": 
-		[{
-			"projectname": "Quote Generator",
-			"shortname": "quote_generator",
-			"techused": "HTML, CSS, Javascript",
-			"completed": "true",
-			"projectimage": "images/project_images/quoteGenerator-tn.png",
-			"projecturl": "https://www.dustinhammack.com/projects/Quote_Generator/",
-			"githuburl": "https://github.com/rdhammack88/FCC-quote_generator",
-			"description": "A random quote generator."
-		}],
-		"random":
-		[{
-			"projectname": "Time Calculator",
-			"shortname": "time_calculator",
-			"techused": "HTML5, CSS, Javascript",
-			"completed": "true",
-			"projectimage": "images/project_images/timeCalculator-tn.png",
-			"projecturl": "https://www.dustinhammack.com/projects/Time_Calculator/",
-			"githuburl": "https://github.com/rdhammack88/Time-Calculator",
-			"description": "A calculator for time."
 		}]
 	}]	
 }

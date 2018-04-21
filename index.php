@@ -145,18 +145,30 @@
 			<p class="scroll-up-button">
 				<a href="#about" class="scroll-up btn">&uarr;</a> <!-- role="button" -->
 			</p>
-		<div id="project-wrapper">
+		<div id="project-wrapper"> <!-- class="container"  -->
 			<h2 class="text-center">Portfolio</h2>
 
 			<?php 
 				$jsonFile = file_get_contents("js/projects.json");
 				$jsonData = json_decode($jsonFile, true);
-				$x = 0;
-				$y = 0;
-				foreach($jsonData['projects'] as $key => $value) {
+				$projects = $jsonData['projects'];
+//				$project_categories = $projects
+			
+//				$x = 0;
+//				$y = 0;
+//				foreach($jsonData['projects'] as $key) { // => $value) { //ORIGINAL WORK//
+//					foreach($key as $k => $v) { // => $value) {
+////				for($i = 0; $i < count($jsonData['projects']); $i++) {
+						
+				foreach($projects as $project_set) {
+					foreach($project_set as $project_category => $project_info) {
+						
+						
+						foreach($project_info as $project) {
+						
 			 ?>
 
-			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2" data-project-name="<?= $value['shortname']; ?>"> 
+			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2" data-project-name="<?= $project['shortname']; ?>"> 
 			 <!-- col-sm-8 col-sm-offset-2">-->
 				<div class="project-overlay">
 <!--
@@ -167,23 +179,25 @@
 <!--					</label>-->
 				</div>
 				 <div class="project-description">
-					<h3><?= $value['projectname']; ?></h3>
+					<h3><?= $project['projectname']; ?></h3>
 				 </div>
-				 <img src="<?= $value['projectimage']; ?>" alt="">
+				 <img src="<?= $project['projectimage']; ?>" alt="">
 			 </div>
 
-			<div class="overlay" id="<?= $value['shortname']; ?>">
+			<div class="overlay" id="<?= $project['shortname']; ?>">
 				<div class="project-modal">
 					<p class="close">X</p>
-					<h2><?= $value['projectname']; ?></h2>
-					<p><strong>Technology Used:</strong> <?= $value['techused']; ?></p>
-					<p><strong>Project Description:</strong> <?= $value['description']; ?></p>
-					<p><a href="<?= $value['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Go to project</a></p>
-					<p><a href="<?= $value['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Go to code</a></p>
+					<h2><?= $project['projectname']; ?></h2>
+					<p><strong>Technology Used:</strong> <?= $project['techused']; ?></p>
+					<p><strong>Project Description:</strong> <?= $project['description']; ?></p>
+					<p><a href="<?= $project['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Check out the project</a></p>
+					<p><a href="<?= $project['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Check out the code</a></p>
 				</div>
 			</div>
 			
 		
+					<?php } ?>
+				<?php } ?>
 			<?php } ?>
 			
 			

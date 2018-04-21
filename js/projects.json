@@ -1,9 +1,10 @@
 {
-	"projects": [
-		{
+	"projects": [{
+		"featured": 
+		[{
 			"projectname": "Blogger",
 			"shortname": "blogger",
-			"techused": "PHP, MySQL, HTML/HTML5, CSS/CSS3, Javascript",
+			"techused": "PHP, MySQL, CSS3, Javascript, AJAX, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/blogger-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Blogger/",
@@ -13,7 +14,7 @@
 		{
 			"projectname": "Quizzer",
 			"shortname": "quizzer",
-			"techused": "PHP, MySQL, HTML/HTML5, SCSS, Javascript",
+			"techused": "PHP, MySQL, SCSS, Javascript, AJAX, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/quizzer-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Quizzer/",
@@ -23,7 +24,7 @@
 		{
 			"projectname": "Movie Finder",
 			"shortname": "movie_finder",
-			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
+			"techused": "HTML5, CSS, Bootstrap 3, Javascript, AJAX, IMDB API, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/movieFinder-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Movie_Finder/",
@@ -33,32 +34,34 @@
 		{
 			"projectname": "Bomber Skateboard Shop",
 			"shortname": "bomber_skateboard_shop",
-			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
+			"techused": "PHP, SCSS, Javascript, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/bomberSkateShop-tn.png",
-			"projecturl": "https://www.dustinhammack.com/projects/Bomber_Skate_Shop/",
+			"projecturl": "https://www.dustinhammack.com/projects/Bomber-Skateshop/",
 			"githuburl": "https://github.com/rdhammack88/Bomber-Skateshop",
 			"description": "Find information on almost any movie."
-		},
-		{
+		}],
+		"fcc": 
+		[{
 			"projectname": "Quote Generator",
 			"shortname": "quote_generator",
-			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
+			"techused": "HTML, CSS, Javascript",
 			"completed": "true",
 			"projectimage": "images/project_images/quoteGenerator-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Quote_Generator/",
 			"githuburl": "https://github.com/rdhammack88/FCC-quote_generator",
 			"description": "A random quote generator."
-		},
-		{
+		}],
+		"random":
+		[{
 			"projectname": "Time Calculator",
 			"shortname": "time_calculator",
-			"techused": "HTML/HTML5, CSS/CSS3, Javascript",
+			"techused": "HTML5, CSS, Javascript",
 			"completed": "true",
 			"projectimage": "images/project_images/timeCalculator-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Time_Calculator/",
 			"githuburl": "https://github.com/rdhammack88/Time-Calculator",
 			"description": "A calculator for time."
-		}
-	]	
+		}]
+	}]	
 }

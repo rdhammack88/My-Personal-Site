@@ -8,9 +8,43 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 	// Immediately invoke function to test screen width and enabel/disable scroll //
-	hiddenOverflow();
+	//hiddenOverflow();
 	// Add event listener to check for resize of screen to enabel/disable scroll //
 	window.addEventListener('resize', hiddenOverflow);
+	
+	// On scroll of window
+//	window.addEventListener('scroll', function() {
+//		
+//		
+//		
+////		console.log(window.pageYOffset)
+////		console.log(document.body.offsetTop)
+////		console.log(this.offsetTop)
+////		console.log($(this).offset())
+////		console.log($('section#main').offset())
+////		console.log($('section#about').offset())
+////		console.log($('section#projects').offset())
+////		console.log($('section#contact').offset())
+////		
+////		$('section#main').offset()
+////		$('section#about').offset()
+////		$('section#projects').offset()
+////		$('section#contact').offset()
+//		
+////		var sections = ['section#main', 'section#about', 'section#projects', 'section#contact'];
+//		var sections = ['main', 'about', 'projects', 'contact'];
+//		
+//		sections.forEach(function(e) {
+//			var el = document.getElementById(e);
+////			console.log(el.offsetTop);
+//			
+//			
+//			if(window.pageYOffset > el.offsetTop) {
+////				window.pageYOffset = el.offsetTop;
+////				el.scrollIntoView(true);
+//			}
+//		});
+//	});
 	
 	// On click of hamburger icon, animate icon to X close button icon //
 	$('.collapsed-nav').click(function() {
@@ -85,16 +119,54 @@ document.addEventListener('DOMContentLoaded', function() {
 			var targetId = '#' + target.attr('id');
 			targetId += '-link';
 			$(targetId).css({
-				'background': '#333',
+				'background': '#888',
 				'color': '#eee'
 			});
+			
+//			$(targetId).after().css({
+//				'content': '',
+//				'width': '0',
+//				'height': '0',
+//				'background': 'red',
+//				'border': '2px solid #000',
+//				'position': 'absolute',
+//				'bottom': 0,
+//				'left': '30%'
+//			});;
+			
+//			$(targetId).$('.navbar a:not('+targetId+')').hover(function() {
+//				$(this).css({
+//					'background': '#555',
+//					'color': '#eee'
+//				});
+//			})
+//			
+			
+//			$(targetId+'::after').css({
+//				'content': '',
+//				'width': '300px',
+//				'height': '300px',
+//				'background': 'red',
+//				'border': '2px solid #000'
+//			});
 			
 //			console.log($('.navbar a:not('+targetId+')'));
 			$('.navbar a:not('+targetId+')').css({
 				'background': 'none',
 				'color': '#555'
 //				'color': '#337ab7'
-			});
+			})
+//				.hover(function() {
+//				$(this).css({
+//					'background': '#888',
+//					'color': '#eee'
+//				});
+//			}).blur(function() {
+//				$(this).css({
+//					'background': 'none',
+//					'color': '#555'
+//				});
+//			});
 			
 		  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 		  // Does a scroll target exist?
@@ -103,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			event.preventDefault();
 			$('html, body').animate({
 			  scrollTop: target.offset().top
-			}, 1000, function() {
+			}, 500, function() {
 			  // Callback after animation
 			  // Must change focus!
 			  var $target = $(target);

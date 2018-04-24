@@ -218,34 +218,34 @@
 	</section>
 
 	<!-- Contact Form Section -->	
-<!--	<section id="contact" class="contact">
-<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>
+	<section id="contact" class="contact">
+<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
-<!--				<a href="#projects" class="scroll-up btn">&uarr;</a> 
-				<!-- role="button" 
+<!--				<a href="#projects" class="scroll-up btn">&uarr;</a> -->
+<!--				 role="button" -->
 			</p>
 		<div id="contact-wrapper">
-			<!-- Contact me for work 
+<!--			 Contact me for work -->
 			<h2 class="text-center">Lets work together</h2>	
 			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 				<div class="form-group">
 
 					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
-					<!--<small class="text-danger">* </small>
+<!--					<small class="text-danger">* </small>-->
 					<small class="text-danger nameError">Required</small>
 					</label>
 					<input type="text" class="form-control" id="name" name="name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
-					<!--<small class="text-danger">* </small>
+<!--					<small class="text-danger">* </small>-->
 					<small class="text-danger emailError">Required</small>
 					</label>
 					<input type="text" class="form-control" id="email" name="email" required>
 				</div>
 				<div class="form-group">
 					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
-					<!--<small class="text-danger">* </small>
+<!--					<small class="text-danger">* </small>-->
 					<small class="text-danger emailError">Required</small>
 					</label>
 					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
@@ -253,24 +253,24 @@
 				<br/>
 				<p><span class="text-danger">&#42; All fields required</span></p>
 
-				<button type="submit" class="btn btn-default btn-lg col-xs-4">Send</button>
+				<button type="submit" name="send" class="btn btn-default btn-lg col-xs-4">Send</button>
 			</form>
 		</div>
-	</section> -->
+	</section> 
 </main>
 
-<!-- Scripts -->
-<!-- Include JQuery -->
+<!-- Scripts 
+<!-- Include JQuery 
 <script src="js/jquery-2.2.4.js"></script>
 
-<!-- jQuery CDN -->
+<!-- jQuery CDN 
 <script
   src="http://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-<!-- Minified Bootstrap JavaScript -->
+<!-- Minified Bootstrap JavaScript 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- Custom JavaScript -->
+<!-- Custom JavaScript 
 <script src="js/scripts.js"></script>
 </body>
 </html>

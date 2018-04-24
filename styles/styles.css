@@ -145,11 +145,13 @@
     color: #eee;
     display: block;
     width: 100vw;
+    height: 15vh;
     left: 0;
     transition: all 3s ease; }
     .navbar.display li {
       display: block;
-      padding: 15px 0 0; }
+      padding: 15px;
+      width: 93%; }
       .navbar.display li a {
         display: inline-block;
         width: 100%;

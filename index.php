@@ -9,7 +9,7 @@
 	<!-- Minified Bootstrap Styles -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Custom Style Sheets -->
-	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/styles.min.css">
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -234,21 +234,21 @@
 <!--					<small class="text-danger">* </small>-->
 					<small class="text-danger nameError">Required</small>
 					</label>
-					<input type="text" class="form-control" id="name" name="name" required>
+					<input type="text" class="form-control" id="name" name="name" placeholder="name" autocomplete="name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
 <!--					<small class="text-danger">* </small>-->
 					<small class="text-danger emailError">Required</small>
 					</label>
-					<input type="text" class="form-control" id="email" name="email" required>
+					<input type="text" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
 				</div>
 				<div class="form-group">
 					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
 <!--					<small class="text-danger">* </small>-->
 					<small class="text-danger emailError">Required</small>
 					</label>
-					<textarea name="message" id="message" cols="10" rows="4" class="form-control"></textarea>
+					<textarea name="message" id="message" cols="10" rows="4" class="form-control" placeholder="Project ideas, details, and cost limits only please..."></textarea>
 				</div>
 				<br/>
 				<p><span class="text-danger">&#42; All fields required</span></p>
@@ -259,18 +259,18 @@
 	</section> 
 </main>
 
-<!-- Scripts 
-<!-- Include JQuery 
+<!-- Scripts -->
+<!-- Include JQuery -->
 <script src="js/jquery-2.2.4.js"></script>
 
-<!-- jQuery CDN 
+<!-- jQuery CDN -->
 <script
-  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-<!-- Minified Bootstrap JavaScript 
+<!-- Minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- Custom JavaScript 
+<!-- Custom JavaScript -->
 <script src="js/scripts.js"></script>
 </body>
 </html>

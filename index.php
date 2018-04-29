@@ -8,6 +8,7 @@
 	<title>Dustin Hammack</title>
 	<!-- Minified Bootstrap Styles -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<!-- Custom Style Sheets -->
 	<link rel="stylesheet" href="styles/styles.min.css">
 	
@@ -90,6 +91,9 @@
 		</div>
 		<p class="scroll-down-button">
 <!--			<a href="#about" class="scroll-down btn">&darr;</a> -->
+			<a href="#about" class="scroll-down">
+				<i class="fa fa-angle-down"></i>
+			</a> 
 			<!-- role="button" -->
 		</p>
 	</section>
@@ -100,10 +104,13 @@
 <!--			<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
 <!--				<a href="#main" class="scroll-up btn">&uarr;</a> -->
+				<a href="#main" class="scroll-up">
+					<i class=" fa fa-angle-up"></i>
+				</a> 
 				<!-- role="button" -->
 			</p>
 			<h2>Who am I?</h2>
-			<p>I am a 28 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
+			<p>I am a 29 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
 			<ul>
 				<li>HTML</li>
 				<li>CSS</li>
@@ -126,7 +133,7 @@
 <!--			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>-->
 
 	
-			<h2>Follow Me!</h2>
+<!--			<h2>Follow Me!</h2>-->
 <!--
 			<img src="images/icons/facebook-icon.png" alt="facebook-icon">
 			<img src="images/icons/instagram-icon.png" alt="instagram-icon">
@@ -138,6 +145,9 @@
 		
 		<p class="scroll-down-button">
 <!--			<a href="#projects" class="scroll-down btn">&darr;</a>-->
+			<a href="#projects" class="scroll-down">
+				<i class="fa fa-angle-down"></i>
+			</a>
 		</p>
 	</section>
 
@@ -146,6 +156,9 @@
 <!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
 <!--				<a href="#about" class="scroll-up btn">&uarr;</a> -->
+				<a href="#about" class="scroll-up">
+					<i class=" fa fa-angle-up"></i>
+				</a> 
 				<!-- role="button" -->
 			</p>
 		<div id="project-wrapper"> <!-- class="container"  -->
@@ -214,6 +227,9 @@
 		
 		<p class="scroll-down-button">
 <!--			<a href="#contact" class="scroll-down btn">&darr;</a>-->
+			<a href="#contact" class="scroll-down">
+				<i class="fa fa-angle-down"></i>
+			</a>
 		</p>
 	</section>
 
@@ -221,7 +237,9 @@
 	<section id="contact" class="contact">
 <!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
 			<p class="scroll-up-button">
-<!--				<a href="#projects" class="scroll-up btn">&uarr;</a> -->
+				<a href="#projects" class="scroll-up">
+					<i class=" fa fa-angle-up"></i>
+				</a> 
 <!--				 role="button" -->
 			</p>
 		<div id="contact-wrapper">

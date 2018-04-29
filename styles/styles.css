@@ -10,16 +10,14 @@
 
 .scroll-up-button .scroll-up, .scroll-down-button .scroll-down {
   position: absolute;
-  background: rgba(220, 220, 220, 0.8);
-  border: .5px solid #000;
-  border-radius: 5px;
+  left: 48%;
   margin: 0 auto 5px;
-  font-size: 1.6rem;
-  color: #022933;
+  font-size: 5.6rem;
+  color: rgba(127, 0, 0, 0.7);
   width: 2em;
   padding: 5px;
   animation: scroll-btn 1s infinite;
-  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px; }
+  z-index: 9999; }
 
 .scroll-up-button {
   display: none; }
@@ -454,7 +452,7 @@ div#project-wrapper {
       width: 100%;
       background: rgba(245, 245, 245, 0.1);
       text-align: center;
-      z-index: 2;
+      z-index: 99999;
       padding: 75px 0 0 0;
       transform: translate(-100%, -100%);
       transition: transform 0.4s ease-in-out; }
@@ -467,7 +465,7 @@ div#project-wrapper {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 99999;
     overflow: hidden;
     background: rgba(22, 22, 22, 0.8); }
   div#project-wrapper .project-modal {

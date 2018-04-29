@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 	// Immediately invoke function to test screen width and enabel/disable scroll //
-	//hiddenOverflow();
+	hiddenOverflow();
 	// Add event listener to check for resize of screen to enabel/disable scroll //
 	window.addEventListener('resize', hiddenOverflow);
 	
@@ -80,12 +80,12 @@ document.addEventListener('DOMContentLoaded', function() {
 ////		  behavior: 'smooth' 
 ////		});
 //		
-////		$(nextSection).scrollTop();
+//		$(nextSection).scrollTop();
 //		document.querySelector('.'+nextSection).scrollIntoView({
 ////			behavior: 'smooth',
 //			behavior: 'smooth' 
 //		});
-//	});
+////	});
 //		var nextSectionOffset = nextSection.pageYOffset;
 //		console.log(nextSectionOffset);
 //		$(this).parents('section').animate({
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //			top: '-' + nextSectionTop
 //		});
 //	});
-	
+//	
 //	$('.about-link, .scroll-down').click(function() {
 ////		$('.about')
 //	}).animate({

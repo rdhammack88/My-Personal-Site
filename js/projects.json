@@ -4,7 +4,7 @@
 		[{
 			"projectname": "Blogger",
 			"shortname": "blogger",
-			"techused": "PHP, MySQL, CSS3, Javascript, AJAX, Git",
+			"techused": "PHP, MySQL, CSS3, Bootstrap v3, Javascript, jQuery v2.1, AJAX, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/blogger-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Blogger/",
@@ -24,7 +24,7 @@
 		{
 			"projectname": "Movie Finder",
 			"shortname": "movie_finder",
-			"techused": "HTML5, CSS, Bootstrap 3, Javascript, AJAX, IMDB API, Git",
+			"techused": "HTML5, CSS, Bootstrap v3, Javascript, AJAX, IMDB API, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/movieFinder-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Movie_Finder/",
@@ -34,7 +34,7 @@
 		 {
 			"projectname": "Media Duration Calculator",
 			"shortname": "time_calc",
-			"techused": "HTML5, SASS, Javascript",
+			"techused": "HTML5, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Git, Font Awesome",
 			"completed": "false",
 			"projectimage": "images/project_images/mediaTimeCalculator-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Media-Duration-Calculator/",
@@ -44,7 +44,7 @@
 		{
 			"projectname": "Bomber Skateboard Shop",
 			"shortname": "bomber_skateboard_shop",
-			"techused": "PHP, SCSS, Javascript, Git",
+			"techused": "PHP, MySQL, SCSS, Javascript, jQuery v3.3, Git, Font Awesome, Google Maps API",
 			"completed": "false",
 			"projectimage": "images/project_images/bomberSkateShop-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Bomber-Skateshop/",

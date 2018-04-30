@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<!-- Custom Style Sheets -->
-	<link rel="stylesheet" href="styles/styles.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	
+	<script src="js/smoothscroll.min.js"></script>
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -60,10 +62,10 @@
 	</div>
 	<div class="navbar">
 		<ul>
-			<li><a href="#main" id="main-link">Home</a></li>
-			<li><a href="#about" id="about-link">About</a></li>
-			<li><a href="#projects" id="projects-link">Portfolio</a></li>
-			<li><a href="#contact" id="contact-link">Contact</a></li>
+			<li><a href="#main" id="main-link" class="active" tabindex="1">Home</a></li>
+			<li><a href="#about" id="about-link" tabindex="2">About</a></li>
+			<li><a href="#projects" id="projects-link" tabindex="3">Portfolio</a></li>
+			<li><a href="#contact" id="contact-link" tabindex="4">Contact</a></li>
 		</ul>
 	</div>
 </nav>

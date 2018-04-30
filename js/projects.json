@@ -34,7 +34,7 @@
 		 {
 			"projectname": "Media Duration Calculator",
 			"shortname": "time_calc",
-			"techused": "HTML5, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Git, Font Awesome",
+			"techused": "HTML5, HTML5 Local Storage API, HTML5 File API, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Git, Font Awesome",
 			"completed": "false",
 			"projectimage": "images/project_images/mediaTimeCalculator-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Media-Duration-Calculator/",

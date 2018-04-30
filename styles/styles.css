@@ -394,6 +394,7 @@ div#about-wrapper {
 
 div#project-wrapper {
   width: 100%;
+  max-width: 1400PX;
   height: 100%;
   margin: 0 auto;
   padding: 200px 50px 0 0; }
@@ -409,7 +410,8 @@ div#project-wrapper {
     overflow: hidden; }
     @media (min-width: 768px) {
       div#project-wrapper .project-container {
-        height: 220px; } }
+        height: 220px;
+        width: 220px; } }
     div#project-wrapper .project-container::after {
       position: absolute;
       display: block;

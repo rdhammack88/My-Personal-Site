@@ -99,6 +99,52 @@ document.addEventListener('DOMContentLoaded', function() {
 //	}).animate({
 //			scrollTop: $('.about').offset().top
 //		}, 1000);;
+	
+	
+	
+	/* Scroll with mousewhell -- WORKING */
+	$(window).on('mousewheel DOMMouseScroll keydown', function(e) {
+		var dir, showEl,
+		  amt = window.innerHeight;
+		var prevEl = $('.active').parent('li').prev('li').children('a').attr('href');
+		var nextEl = $('.active').parent('li').next('li').children('a').attr('href');
+		
+		console.log(prevEl);
+		console.log(nextEl);
+		console.log(e.type);
+		console.log(e)
+		console.log(e.originalEvent.wheelDelta);
+		console.log(e.originalEvent.detail);
+
+		e.preventDefault();
+		if(e.type === 'mousewheel') {
+//			dir = e.originalEvent.wheelDelta > 0 ? '-=' : '+=';
+			showEl = e.originalEvent.wheelDelta > 0 ? prevEl : nextEl;
+		}
+		else {
+//			dir = e.originalEvent.detail < 0 ? '-=' : '+=';
+			showEl = e.originalEvent.detail < 0 ? prevEl : nextEl;
+		}
+		
+		if(e.type === 'keydown' && e.keyCode === 38) {
+			showEl = prevEl;
+		} else if(e.type === 'keydown' && e.keyCode === 40) {
+			showEl = nextEl;
+		} else if(e.type === 'keydown') {
+			return false;
+		}
+
+		/* Scroll with mousewhell -- WORKING */
+		$('html, body').animate({
+//			scrollTop: dir + amt
+			scrollTop: $(showEl).offset().top
+		},1000); //stop()
+		
+		$('a[href="'+showEl+'"]').click(); //.stop(1000);
+	});
+	
+	
+	
 
 	
 	// Select all links with hashes
@@ -121,7 +167,9 @@ document.addEventListener('DOMContentLoaded', function() {
 			$(targetId).css({
 				'background': '#888',
 				'color': '#eee'
-			});
+			}).addClass('active');
+			
+//			$(targetId).addClass('active');
 			
 //			$(targetId).after().css({
 //				'content': '',
@@ -155,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				'background': 'none',
 				'color': '#555'
 //				'color': '#337ab7'
-			})
+			}).removeClass('active');
 //				.hover(function() {
 //				$(this).css({
 //					'background': '#888',

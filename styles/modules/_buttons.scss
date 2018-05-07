@@ -8,27 +8,14 @@
 
 %scroll-btns {
 	position: absolute;
-	left: 48%; // 46.5vw;
-//	background: rgba(220, 220, 220, 0.8); // 0.4);
-//	border: .5px solid #000;
-//	border-top-width: 0;
-//	border-radius: 5px;
+	left: 48%;
 	margin: 0 auto 5px;
-	font-size: 5.6rem; //2.2em;
+	font-size: 5.6rem;
 	color: lighten($bloodred, 12%);
-	width: 2em;
+	width: 1em;
 	padding: 5px;
 	animation: scroll-btn 1s infinite; //alternate
-//	border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
-	
-//	position: absolute;
-	z-index: 9999;
-//	border: 25px solid transparent;
-//	left: 50%;
-//	border-top-color: rgba(0,0,0,0.9);
-//	border-bottom-width: 0;
-//	transform: translateX(-50%);
-	
+	z-index: 9999;	
 }
 		
 .scroll-up-button {
@@ -52,12 +39,10 @@
 	.scroll-down {
 		@extend %scroll-btns;
 		bottom: 0;
-		left: 48%; // 46.5vw;
+		left: 48%;
 	}
 
 	@include break(768px) {
 		display: block;
-//			bottom: 0;
-//			left: 48%; // 46.5vw;
 	}
 }

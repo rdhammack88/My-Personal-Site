@@ -1,0 +1,35 @@
+
+div#contact-wrapper {
+	clear: both;
+	padding: 100px 0 100px;
+	background-color: $lightblue1;
+	height: 100vh;
+	
+	@include break(768px) {
+		height: 100vh;
+		margin: 0;
+		padding-top: 20vh;
+	}
+	
+	h2 {
+		color: #eee;
+	}
+	
+	form {
+		color: #eee;
+		border-color: $lightblue1;
+	}
+	
+	label {
+		font-size: 1.4rem;
+	}
+	
+	.form-group:last-of-type {
+		margin: 0;
+		
+		& ~ p {
+			padding-bottom: 10px;
+			font-size: 1.4rem;
+		}
+	}
+}

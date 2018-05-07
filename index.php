@@ -6,13 +6,13 @@
 	<meta name="author" content="Dustin Hammack">
 	<meta name="description" content="A portfolio site for Dustin Hammack!">
 	<title>Dustin Hammack</title>
+	
 	<!-- Minified Bootstrap Styles -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	
 	<!-- Custom Style Sheets -->
 	<link rel="stylesheet" href="styles/styles.css">
-	
-	<script src="js/smoothscroll.min.js"></script>
 	
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -22,275 +22,246 @@
 </head>
 
 <body class="">
-<!-- Removed Bootstrap-Collapsible Navigation Code -->
-<!--<div class="row" id="headingNav" >
-	<div class="navbar nav-container col-xs-1 col-sm-5 col-sm-push-1 col-md-6 col-md-push-1" id="mainNav">
-		<nav class=" nav-pills">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle col-xs-10  col-xs-offset-1" data-toggle="collapse" data-target="#nav" aria-label="Toggle navigation">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="nav">
-				<ul class="nav navbar-nav col-sm-12">
-					<li class="col-xs-12 col-sm-4 col-md-4 activeLink"><a href="#" id="aboutLink">About</a></li>
-					<li class="col-xs-12 col-sm-4 col-md-4"><a href="#" id="projectsLink">Projects</a></li>
-					<li class="col-xs-12 col-sm-4 col-md-4"><a href="#" id="contactLink">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div class="container col-xs-11 col-sm-5 col-sm-push-1 col-md-4 noLeftPadding">
-		<header id="nameAndTitle">
-			<h1 id="name"><span>Dustin Hammack</span></h1>
-			<div id="professionalPhoto">
-				<img src="./images/proMe(left-side).jpg" alt="A picture of me, Dustin Hammack" id="professionalPhotoLeft">
-				<img src="./images/proMe(right-side).jpg" alt="A picture of me, Dustin Hammack" id="professionalPhotoRight">
-			</div>
-			<h4 id="title"><span>Full Stack Web Developer</span></h4>
-		</header>
-	</div>
-</div>-->
-
-<!-- Main Navigation -->
-<nav>
-	<div class="collapsed-nav">
-		<span class="bar-icon"></span>
-		<span class="bar-icon"></span>
-		<span class="bar-icon"></span>
-	</div>
-	<div class="navbar">
-		<ul>
-			<li><a href="#main" id="main-link" class="active" tabindex="1">Home</a></li>
-			<li><a href="#about" id="about-link" tabindex="2">About</a></li>
-			<li><a href="#projects" id="projects-link" tabindex="3">Portfolio</a></li>
-			<li><a href="#contact" id="contact-link" tabindex="4">Contact</a></li>
-		</ul>
-	</div>
-</nav>
-<!-- Main Body Content -->
-<main>
-	<!-- Main Content Section -->
-	<section id="main" class="main">
-		<div id="home-wrapper">
-			<div id="home-left">
-				<div class="left-cover"></div>
-				<div id="home-img-holder">
-					<div>
-						<img src="images/mePro.jpg" alt="">
+	<!-- Main Navigation -->
+	<nav>
+		<div class="collapsed-nav">
+			<span class="bar-icon"></span>
+			<span class="bar-icon"></span>
+			<span class="bar-icon"></span>
+		</div>
+		<div class="navbar">
+			<ul>
+				<li><a href="#main" id="main-link" class="active" tabindex="1">Home</a></li>
+				<li><a href="#about" id="about-link" tabindex="2">About</a></li>
+				<li><a href="#projects" id="projects-link" tabindex="3">Portfolio</a></li>
+				<li><a href="#contact" id="contact-link" tabindex="4">Contact</a></li>
+			</ul>
+		</div>
+	</nav><!-- Main Navigation -->
+	<!-- Main Body Content -->
+	<main>
+		<!-- Main Content Section -->
+		<section id="main" class="main">
+			<div id="home-wrapper">
+				<div id="home-left">
+					<div class="left-cover"></div>
+					<div id="home-img-holder">
+						<div>
+							<img src="images/mePro.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="home-right">
+					<div class="text-holder">
+						<h2>Dustin Hammack</h2>
+						<span>&lt;</span><hr><span>&gt;</span>
+						<h4>Full Stack Web Developer</h4>
 					</div>
 				</div>
 			</div>
-			<div id="home-right">
-				<div class="text-holder">
-					<h2>Dustin Hammack</h2>
-					<span>&lt;</span><hr><span>&gt;</span>
-					<h4>Full Stack Web Developer</h4>
-				</div>
-			</div>
-<!--			<button class="scroll-down">&darr;</button>-->
-		</div>
-		<p class="scroll-down-button">
-<!--			<a href="#about" class="scroll-down btn">&darr;</a> -->
-			<a href="#about" class="scroll-down">
-				<i class="fa fa-angle-down"></i>
-			</a> 
-			<!-- role="button" -->
-		</p>
-	</section>
-
-	<!-- About Me Section -->
-	<section id="about" class="about">
-		<div id="about-wrapper">
-<!--			<a href="#contact" class="scroll-up btn">&uarr;</a>-->
-			<p class="scroll-up-button">
-<!--				<a href="#main" class="scroll-up btn">&uarr;</a> -->
-				<a href="#main" class="scroll-up">
-					<i class=" fa fa-angle-up"></i>
-				</a> 
-				<!-- role="button" -->
+			<p class="scroll-down-button">
+				<a href="#about" class="scroll-down">
+					<i class="fa fa-angle-down"></i>
+				</a>
 			</p>
-			<h2>Who am I?</h2>
-			<p>I am a 29 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Bootstrap</li>
-				<li>SASS</li>
-				<li>Javascript</li>
-				<li>jQuery</li>
-				<li>PHP</li>
-				<li>MySQL</li>
-			</ul>
+		</section><!-- Main Content Section -->
 
-			<h2>Background</h2>
+		<!-- About Me Section -->
+		<section id="about" class="about">
+			<div id="about-wrapper">
+				<p class="scroll-up-button">
+					<a href="#main" class="scroll-up">
+						<i class=" fa fa-angle-up"></i>
+					</a>
+				</p>
+				<div class="aboutGridItem">
+					<h2>Who am I?</h2>
+	<!--			<h2>A little bit about me</h2>-->
+					<!--<p>I am a 29 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>-->
 
-			<p>I currently have experience using the LAMP stack. 
-			HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. </p>
-			<br><br>
+					<p>I am a self taught, self motivated, self driven technology enthusiast! I have worked in the Telecommunications Industry for the past 8 years, and for the past 18 months I have been teaching myself how to code mobile first, dynamic web applications and web sites. I spend the majority of my time coding, and learning all I can about web development technologies. When I'm not developing web applications, you can find me either skateboarding or hanging out with friends and family.</p>
+				</div>
 
-<!--			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat voluptatem facilis, itaque, fuga laboriosam dolorem facere nostrum ullam quis aliquid voluptate quidem maiores natus vero culpa doloremque! Consequatur vel quia aperiam labore fugiat ipsam aspernatur odit, iusto quibusdam quod. Provident sint quod dolorum dolores ab aut excepturi suscipit doloribus.</p>		-->
+				<div class="skillsGridItem">
+					<h2>Skills</h2>
+				</div>
 
-<!--			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam eaque, ad iusto totam eius quasi rerum. Dolorum sequi harum eos maxime a ea aspernatur animi quis doloremque quae sit consectetur rerum, blanditiis excepturi tenetur corporis et quasi veniam nihil possimus odio voluptatibus, iste deserunt repudiandae officia.</p>-->
+				<div class="languagesGridItem">
+					<h5>Languages</h5>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+						<li>PHP</li>
+						<li>MySQL</li>
+					</ul>
+				</div>
 
-	
-<!--			<h2>Follow Me!</h2>-->
-<!--
-			<img src="images/icons/facebook-icon.png" alt="facebook-icon">
-			<img src="images/icons/instagram-icon.png" alt="instagram-icon">
-			<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
--->
-	
-			
-		</div>
-		
-		<p class="scroll-down-button">
-<!--			<a href="#projects" class="scroll-down btn">&darr;</a>-->
-			<a href="#projects" class="scroll-down">
-				<i class="fa fa-angle-down"></i>
-			</a>
-		</p>
-	</section>
+				<div class="librariesGridItem">
+					<h5>Preprocessors / Libraries / Frameworks</h5>
+					<ul>
+						<li>Bootstrap</li>
+						<li>SASS</li>
+						<li>jQuery</li>
+						<li>AngularJS</li>
+					</ul>
+				</div>
 
-	<!-- Project Portfolio Section -->
-	<section id="projects" class="projects">
-<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
+				<div class="softwareGridItem">
+					<h5>Software</h5>
+					<ul>
+						<li>Microsoft Windows</li>
+						<li>Linux Ubuntu</li>
+						<li>Brackets</li>
+						<li>Atom</li>
+						<li>Git/Github/Git Bash</li>
+						<li>Command Line</li>
+						<li>WAMP Server</li>
+						<li>Koala Compiler</li>
+						<li>C Panel</li>
+					</ul>
+				</div>
+
+	<!--
+				<div class="aboutGridItem3">
+					<h2>Background</h2>
+					<p>I currently have experience using the LAMP stack. 
+					HTML, CSS, Bootstrap, SASS, Javascript, jQuery, PHP &amp; MySQL. </p>
+				</div>
+	-->
+
+
+	<!--			<br><br>-->
+	<!--			<h2>Follow Me!</h2>-->
+	<!--
+				<img src="images/icons/facebook-icon.png" alt="facebook-icon">
+				<img src="images/icons/instagram-icon.png" alt="instagram-icon">
+				<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
+	-->
+			</div>
+
+			<p class="scroll-down-button">
+				<a href="#projects" class="scroll-down">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</p>
+		</section><!-- About Me Section -->
+
+		<!-- Project Portfolio Section -->
+		<section id="projects" class="projects">
 			<p class="scroll-up-button">
-<!--				<a href="#about" class="scroll-up btn">&uarr;</a> -->
 				<a href="#about" class="scroll-up">
-					<i class=" fa fa-angle-up"></i>
-				</a> 
-				<!-- role="button" -->
+					<i class="fa fa-angle-up"></i>
+				</a>
 			</p>
-		<div id="project-wrapper"> <!-- class="container"  -->
-			<h2 class="text-center">Portfolio</h2>
+			<div id="project-wrapper">
+				<h2 class="text-center">Portfolio</h2>
 
-			<?php 
-				$jsonFile = file_get_contents("js/projects.json");
-				$jsonData = json_decode($jsonFile, true);
-				$projects = $jsonData['projects'];
-//				$project_categories = $projects
-			
-//				$x = 0;
-//				$y = 0;
-//				foreach($jsonData['projects'] as $key) { // => $value) { //ORIGINAL WORK//
-//					foreach($key as $k => $v) { // => $value) {
-////				for($i = 0; $i < count($jsonData['projects']); $i++) {
-						
-				foreach($projects as $project_set) {
-					foreach($project_set as $project_category => $project_info) {
-						
-						
-						foreach($project_info as $project) {
-						
-			 ?>
+				<?php 
+					$jsonFile = file_get_contents("js/projects.json");
+					$jsonData = json_decode($jsonFile, true);
+					$projects = $jsonData['projects'];
 
-			 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2" data-project-name="<?= $project['shortname']; ?>"> 
-			 <!-- col-sm-8 col-sm-offset-2">-->
-				<div class="project-overlay">
-<!--
-					<input type="checkbox" id="project<?php echo $x++; ?>" style="display:none" />  
-					<label class="button" for="project<?php echo $y++; ?>">
--->
-						<a  class="project-details btn btn-lg btn-danger">More Details</a>
-<!--					</label>-->
-				</div>
-				 <div class="project-description">
-					<h3><?= $project['projectname']; ?></h3>
+					foreach($projects as $project_set) {
+						foreach($project_set as $project_category => $project_info) {
+
+
+							foreach($project_info as $project) {
+
+				 ?>
+
+				 <div class="project-container col-xs-11 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-lg-2" data-project-name="<?= $project['shortname']; ?>"> 
+					<div class="project-overlay">
+							<a  class="project-details btn btn-lg btn-danger">More Details</a>
+					</div>
+					 <div class="project-description">
+						<h3><?= $project['projectname']; ?></h3>
+					 </div>
+					 <img src="<?= $project['projectimage']; ?>" alt="">
 				 </div>
-				 <img src="<?= $project['projectimage']; ?>" alt="">
-			 </div>
 
-			<div class="overlay" id="<?= $project['shortname']; ?>">
-				<div class="project-modal">
-					<p class="close">X</p>
-					<h2><?= $project['projectname']; ?></h2>
-					<p><strong>Technology Used:</strong> <?= $project['techused']; ?></p>
-					<p><strong>Project Description:</strong> <?= $project['description']; ?></p>
-					<p><a href="<?= $project['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Check out the project</a></p>
-					<p><a href="<?= $project['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Check out the code</a></p>
-					
-					<?php if($project['completed'] === 'false') { ?>
-						<br/><br/><br/>
-						<p class="text-center">** This site is not 100% completed, and I am always adding new features and playing with the diplays.</p>
+				<div class="overlay" id="<?= $project['shortname']; ?>">
+					<div class="project-modal">
+						<p class="close">X</p>
+						<h2><?= $project['projectname']; ?></h2>
+						<p><strong>Technology Used:</strong> <?= $project['techused']; ?></p>
+						<p><strong>Project Description:</strong> <?= $project['description']; ?></p>
+						<p><a href="<?= $project['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Check out the project</a></p>
+						<p><a href="<?= $project['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Check out the code</a></p>
+
+						<?php if($project['completed'] === 'false') { ?>
+							<br/><br/><br/>
+							<p class="text-center">** This site is not 100% completed, and I am always adding new features and playing with the diplays.</p>
+						<?php } ?>
+					</div>
+				</div>		
+						<?php } ?>
 					<?php } ?>
-				</div>
+				<?php } ?>			
 			</div>
-			
-		
-					<?php } ?>
-				<?php } ?>
-			<?php } ?>
-			
-			
-			
-		</div>
-		
-		<p class="scroll-down-button">
-<!--			<a href="#contact" class="scroll-down btn">&darr;</a>-->
-			<a href="#contact" class="scroll-down">
-				<i class="fa fa-angle-down"></i>
-			</a>
-		</p>
-	</section>
 
-	<!-- Contact Form Section -->	
-	<section id="contact" class="contact">
-<!--		<a href="#contact" class="scroll-up btn">&uarr;</a>-->
+			<p class="scroll-down-button">
+				<a href="#contact" class="scroll-down">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</p>
+		</section><!-- Project Portfolio Section -->
+
+		<!-- Contact Form Section -->	
+		<section id="contact" class="contact">
 			<p class="scroll-up-button">
 				<a href="#projects" class="scroll-up">
 					<i class=" fa fa-angle-up"></i>
 				</a> 
-<!--				 role="button" -->
 			</p>
-		<div id="contact-wrapper">
-<!--			 Contact me for work -->
-			<h2 class="text-center">Lets work together</h2>	
-			<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-				<div class="form-group">
+			<div id="contact-wrapper">
+				<h2 class="text-center">Lets work together</h2>	
+				<form action="contact.php" method="post" class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+					<div class="form-group">
 
-					<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--					<small class="text-danger">* </small>-->
-					<small class="text-danger nameError">Required</small>
-					</label>
-					<input type="text" class="form-control" id="name" name="name" placeholder="name" autocomplete="name" required>
-				</div>
-				<div class="form-group">
-					<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--					<small class="text-danger">* </small>-->
-					<small class="text-danger emailError">Required</small>
-					</label>
-					<input type="text" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
-				</div>
-				<div class="form-group">
-					<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
-<!--					<small class="text-danger">* </small>-->
-					<small class="text-danger emailError">Required</small>
-					</label>
-					<textarea name="message" id="message" cols="10" rows="4" class="form-control" placeholder="Project ideas, details, and cost limits only please..."></textarea>
-				</div>
-				<br/>
-				<p><span class="text-danger">&#42; All fields required</span></p>
+						<label for="name">Name: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--					<small class="text-danger">* </small>-->
+						<small class="text-danger nameError">Required</small>
+						</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="name" autocomplete="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--					<small class="text-danger">* </small>-->
+						<small class="text-danger emailError">Required</small>
+						</label>
+						<input type="text" class="form-control" id="email" name="email" placeholder="email" autocomplete="email" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message: &nbsp;&nbsp;&nbsp;&nbsp;
+	<!--					<small class="text-danger">* </small>-->
+						<small class="text-danger emailError">Required</small>
+						</label>
+						<textarea name="message" id="message" cols="10" rows="4" class="form-control" placeholder="Project ideas, details, and cost limits only please..."></textarea>
+					</div>
+					<br/>
+					<p><span class="text-danger">&#42; All fields required</span></p>
 
-				<button type="submit" name="send" class="btn btn-default btn-lg col-xs-4">Send</button>
-			</form>
-		</div>
-	</section> 
-</main>
+					<button type="submit" name="send" class="btn btn-default btn-lg col-xs-4">Send</button>
+				</form>
+			</div>
+		</section><!-- Contact Form Section -->
+	</main><!-- Main Body Content -->
 
-<!-- Scripts -->
-<!-- Include JQuery -->
-<script src="js/jquery-2.2.4.js"></script>
+	<!-- Scripts -->
+	<!-- Include JQuery -->
+	<script src="js/jquery-2.2.4.js"></script>
 
-<!-- jQuery CDN -->
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-<!-- Minified Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- Custom JavaScript -->
-<script src="js/scripts.js"></script>
+	<!-- jQuery CDN -->
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	  
+	<!-- Minified Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JavaScript -->
+	<script src="js/scripts.js"></script>
 </body>
 </html>

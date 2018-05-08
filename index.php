@@ -74,12 +74,13 @@
 						<i class=" fa fa-angle-up"></i>
 					</a>
 				</p>
+			<div class="grid">
 				<div class="aboutGridItem">
 					<h2>Who am I?</h2>
 	<!--			<h2>A little bit about me</h2>-->
 					<!--<p>I am a 29 year old Web Developer from Fort Worth, TX. I started creating content for the web a little over a year ago, and it has now become a passion of mine. The projects displayed on this site are built upon the LAMP stack, using technologies such as:</p>-->
 
-					<p>I am a self taught, self motivated, self driven technology enthusiast! I have worked in the Telecommunications Industry for the past 8 years, and for the past 18 months I have been teaching myself how to code mobile first, dynamic web applications and web sites. I spend the majority of my time coding, and learning all I can about web development technologies. When I'm not developing web applications, you can find me either skateboarding or hanging out with friends and family.</p>
+					<p>I am a self taught, self motivated, self driven technology enthusiast with a passion emphasis on Programming and IT Networking. I have worked in the Telecommunications Industry for the past 8 years, and for the past 18 months I have been teaching myself how to code mobile first, dynamic web applications, and web sites. I spend the majority of my time coding, and learning all I can about web development technologies. When I'm not developing web applications, you can find me either skateboarding or hanging out with friends and family.</p>
 				</div>
 
 				<div class="skillsGridItem">
@@ -98,7 +99,7 @@
 				</div>
 
 				<div class="librariesGridItem">
-					<h5>Preprocessors / Libraries / Frameworks</h5>
+					<h5>Libraries / Frameworks</h5>
 					<ul>
 						<li>Bootstrap</li>
 						<li>SASS</li>
@@ -107,6 +108,19 @@
 					</ul>
 				</div>
 
+				<div class="workflowGridItem">
+					<h5>Workflows</h5>
+					<ul>
+						<li>Git/Github/Git Bash</li>
+						<li>Command Line</li>
+						<li>WAMP Server</li>
+						<li>Koala Compiler</li>
+						<li>C Panel</li>
+						<li>Developer Tools</li>
+						<li>Gulp.js</li>
+					</ul>
+				</div>
+				
 				<div class="softwareGridItem">
 					<h5>Software</h5>
 					<ul>
@@ -114,12 +128,11 @@
 						<li>Linux Ubuntu</li>
 						<li>Brackets</li>
 						<li>Atom</li>
-						<li>Git/Github/Git Bash</li>
-						<li>Command Line</li>
-						<li>WAMP Server</li>
-						<li>Koala Compiler</li>
-						<li>C Panel</li>
 					</ul>
+				</div>
+				
+				<div class="resumeLinkGridItem">
+					<a href="#" class="btn btn-primary" download>Resume/CV</a>
 				</div>
 
 	<!--
@@ -133,13 +146,34 @@
 
 	<!--			<br><br>-->
 	<!--			<h2>Follow Me!</h2>-->
-	<!--
+	
+<!--
 				<img src="images/icons/facebook-icon.png" alt="facebook-icon">
 				<img src="images/icons/instagram-icon.png" alt="instagram-icon">
-				<img src="images/icons/linkedin-logo.png" alt="linked-in-icon">
-	-->
+-->
+			<div class="socialAccounts">
+<!--				<div class"facebook-btn">-->
+<!--					<a href="" class="btn"><img src="images/icons/facebook-icon.png" alt="Facebook Account">&nbsp; Facebook</a>-->
+<!--
+				</div>
+				<div class"linkedin-btn">
+-->
+					<a href="" class="btn"><img src="images/icons/linkedin-logo.png" alt="LinkedIn Account">&nbsp; LinkedIn</a>
+<!--
+				</div>
+				<div class"github-btn">
+-->
+					<a href="" class="btn"><img src="images/icons/github-icon.png" alt="Github Account">&nbsp; Github</a>
+					
+					<a href="" class="btn"><img src="images/icons/Pastebin-simple.png" alt="Pastebin Account">&nbsp; Pastebin</a>
+<!--				</div>-->
+				
+				
+				
 			</div>
-
+				
+			</div>
+</div>
 			<p class="scroll-down-button">
 				<a href="#projects" class="scroll-down">
 					<i class="fa fa-angle-down"></i>

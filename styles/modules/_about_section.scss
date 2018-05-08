@@ -9,31 +9,42 @@ div#about-wrapper {
 	
 	@include break(768px) {
 		width: 100%;
+//		max-width: 1200px;
 		height: 100%;
 		padding-top: 10vh;
 		position: relative;
 		left: 0;
 		top: 0;
 		
-		display: grid;
-		grid-template-columns: 20% 20% 20% 20% 20%;
-		grid-template-rows: calc(100%/3) calc(100%/10) calc(100%/4);
+		.grid {
+			max-width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			display: grid;
+			grid-row-gap: 2%;
+			grid-template-columns: 10% 15% 25% 20% 20% 10%;
+//			grid-template-columns: 10% 15% 22% 22% 22% 10%;
+//			grid-template-columns: 10% 15% 35% 25% 10%;
+			grid-template-rows: calc(100%/2.4) calc(100%/22) calc(100%/3) calc(100%/15);
+		}
 	}
 	
 	.aboutGridItem {
-		justify-content: center;
+//		justify-content: center;
 		padding: 10px;
+		padding-top: 4%;
 		grid-row-start: 1;
 		grid-row-end: 2;
-		grid-column-start: 2;
+		grid-column-start: 3;
 		grid-column-end: 5;
 	}
 
 	.skillsGridItem {
 		grid-row-start: 2;
 		grid-row-end: 3;
-		grid-column-start: 2;
+		grid-column-start: 3;
 		grid-column-end: 5;
+		text-align: center;
 	}
 	
 	.languagesGridItem {
@@ -50,16 +61,82 @@ div#about-wrapper {
 		grid-column-end: 4;
 	}
 	
-	.softwareGridItem {
+	.workflowGridItem {
 		grid-row-start: 3;
 		grid-row-end: 4;
 		grid-column-start: 4;
 		grid-column-end: 5;
 	}
 	
+	.softwareGridItem {
+		grid-row-start: 3;
+		grid-row-end: 4;
+		grid-column-start: 5;
+		grid-column-end: 6;
+	}
+	
+	.resumeLinkGridItem {
+		grid-row-start: 4;
+		grid-row-end: 5;
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+	
+	.socialAccounts {
+		margin-top: 3%;
+		grid-row-start: 4;
+		grid-row-end: 5;
+		grid-column-start: 3;
+		grid-column-end: 6;
+		
+		@include break(1024px) {
+			margin-top: 0;
+		}
+		
+		.btn {
+			color: #eee;
+			background: #777;
+			text-decoration: none;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			
+			&:hover {
+				background: darken(#777, 10%);
+			}
+			
+			img {
+				
+			width: 1.3em;
+			height: 1.3em;
+			}
+		}
+		
+//		.facebook-btn {
+//			grid-row-start: 4;
+//			grid-row-end: 5;
+//			grid-column-start: 3;
+//			grid-column-end: 4;
+//		}
+//		
+//		.linkedin-btn {
+//			grid-row-start: 4;
+//			grid-row-end: 5;
+//			grid-column-start: 4;
+//			grid-column-end: 5;
+//		}
+//		
+//		.github-btn {
+//			grid-row-start: 4;
+//			grid-row-end: 5;
+//			grid-column-start: 5;
+//			grid-column-end: 6;
+//		}
+	}
+	
 	h2 {
 		color: $red;
-		margin: 30px auto 10px;
+		margin: 0 0 10px;
+//		margin: 30px auto 10px;
 		
 	}
 	
@@ -67,6 +144,7 @@ div#about-wrapper {
 		color: $yellow;
 		text-align: left;
 		padding-left: 15%;
+		margin-bottom: 5%;
 		text-decoration: underline;
 	}
 	

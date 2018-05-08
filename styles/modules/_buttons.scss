@@ -8,14 +8,18 @@
 
 %scroll-btns {
 	position: absolute;
-	left: 48%;
+	left: 45%;
 	margin: 0 auto 5px;
 	font-size: 5.6rem;
 	color: lighten($bloodred, 12%);
 	width: 1em;
 	padding: 5px;
 	animation: scroll-btn 1s infinite; //alternate
-	z-index: 9999;	
+	z-index: 9999;
+	
+	@include break(1024px) {
+		left: 47%;
+	}
 }
 		
 .scroll-up-button {
@@ -26,7 +30,7 @@
 		top: 0;
 	}
 
-	@include break(768px) {
+	@include break(1024px) {
 		display: block;
 		top: 10px;
 	}
@@ -39,10 +43,10 @@
 	.scroll-down {
 		@extend %scroll-btns;
 		bottom: 0;
-		left: 48%;
+//		left: 47%;
 	}
 
-	@include break(768px) {
+	@include break(1024px) {
 		display: block;
 	}
 }

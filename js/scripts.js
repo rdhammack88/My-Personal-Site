@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 	// Function to test screen width and enabel/disable scroll //
 	function hiddenOverflow() {
-		if(window.innerWidth > 768) {
+		if(window.innerWidth > 1024) {
 			window.document.body.style.overflowY = 'hidden';
 		} else {
 			window.document.body.style.overflowY = 'auto';

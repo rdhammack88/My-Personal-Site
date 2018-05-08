@@ -24,7 +24,7 @@
 		{
 			"projectname": "Movie Finder",
 			"shortname": "movie_finder",
-			"techused": "HTML5, CSS, Bootstrap v3, Javascript, AJAX, IMDB API, Git",
+			"techused": "HTML5, CSS, Bootstrap v3, Javascript, AngularJS, AJAX, IMDB API, Git",
 			"completed": "false",
 			"projectimage": "images/project_images/movieFinder-tn.png",
 			"projecturl": "https://www.dustinhammack.com/projects/Movie_Finder/",

@@ -118,6 +118,23 @@ section {
   section#contact {
     height: 100%;
     background-color: #5bc0de; }
+  @media (min-width: 1024px) {
+    section {
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100vh; }
+      section#projects {
+        max-height: 100vh !important; } }
+  @media only screen and (max-width: 300px) {
+    section#projects {
+      min-height: 210vh; } }
+  @media only screen and (max-height: 1000px) and (max-width: 768px) {
+    section#projects {
+      min-height: 250vh; } }
+  @media only screen and (max-height: 1050px) and (max-width: 600px) {
+    section#projects {
+      min-height: 200vh; } }
   @media only screen and (max-height: 850px) and (min-width: 300px) {
     section#projects {
       min-height: 300vh; } }
@@ -130,14 +147,12 @@ section {
   @media only screen and (max-height: 600px) and (max-width: 600px) {
     section#projects {
       min-height: 600vh; } }
-  @media (min-width: 1024px) {
-    section {
-      position: relative;
-      top: 0;
-      left: 0;
-      height: 100vh; }
-      section#projects {
-        max-height: 100vh !important; } }
+  @media only screen and (max-height: 600px) and (max-width: 350px) {
+    section#projects {
+      min-height: 340vh; } }
+  @media only screen and (min-height: 600px) and (max-height: 800px) and (min-width: 600px) and (max-width: 1024px) {
+    section#projects {
+      min-height: 100vh; } }
 
 nav {
   z-index: 999;

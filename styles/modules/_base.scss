@@ -61,6 +61,17 @@ section {
 		background-color: $lightblue1;
 	}
 	
+	@include break(1024px) {
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		
+		&#projects {
+			max-height: 100vh !important;
+		}
+	}
+	
 //	@include break(0, 768px) {
 //		&#projects {
 //			min-height: 300vh;
@@ -103,6 +114,25 @@ section {
 //		}
 //	}
 	
+	
+	@media only screen and (max-width: 300px){
+		&#projects {
+			min-height: 210vh;
+		}
+	}
+	
+	@media only screen and (max-height: 1000px) and (max-width: 768px){
+		&#projects {
+			min-height: 250vh;
+		}
+	}
+	
+	@media only screen and (max-height: 1050px) and (max-width: 600px){
+		&#projects {
+			min-height: 200vh;
+		}
+	}
+	
 	@media only screen and (max-height: 850px) and (min-width: 300px){
 		&#projects {
 			min-height: 300vh;
@@ -124,6 +154,18 @@ section {
 	@media only screen and (max-height: 600px) and (max-width: 600px){
 		&#projects {
 			min-height: 600vh;
+		}
+	}
+	
+	@media only screen and (max-height: 600px) and (max-width: 350px){
+		&#projects {
+			min-height: 340vh;
+		}
+	}
+	
+	@media only screen and (min-height: 600px) and (max-height: 800px) and (min-width: 600px) and (max-width: 1024px){
+		&#projects {
+			min-height: 100vh;
 		}
 	}
 //	
@@ -151,14 +193,5 @@ section {
 //		}
 //	}
 	
-	@include break(1024px) {
-		position: relative;
-		top: 0;
-		left: 0;
-		height: 100vh;
-		
-		&#projects {
-			max-height: 100vh !important;
-		}
-	}
+	
 }

@@ -21,8 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 	
 	$('.collapsed-nav ~ .navbar li a').click(function() {
-		$('.navbar').toggleClass('display');
-		$('span.bar-icon').toggleClass('rotated');
+		if(window.innerWidth < 1024) {
+			$('.navbar').toggleClass('display');
+			$('span.bar-icon').toggleClass('rotated');
+		}
 	});
 	
 	// On click of each project, display an overlay //

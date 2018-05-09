@@ -52,6 +52,10 @@ section {
 	height: 100%;
 	min-height: 100vh;
 	
+	&#about {
+		font-family: $philosopher;
+	}
+	
 	&#contact {
 		height: 100%;
 		background-color: $lightblue1;

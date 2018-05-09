@@ -132,7 +132,7 @@
 				</div>
 				
 				<div class="resumeLinkGridItem">
-					<a href="#" class="btn btn-primary" download>Resume/CV</a>
+					<a href="./DustinHammack-Resume.pdf" class="btn btn-primary" download>Resume/CV</a>
 				</div>
 
 	<!--
@@ -158,14 +158,14 @@
 				</div>
 				<div class"linkedin-btn">
 -->
-					<a href="" class="btn"><img src="images/icons/linkedin-logo.png" alt="LinkedIn Account">&nbsp; LinkedIn</a>
+					<a href="https://www.linkedin.com/in/hammackdustin" class="btn" target="_blank"><img src="images/icons/linkedin-logo.png" alt="LinkedIn Account">&nbsp; LinkedIn</a>
 <!--
 				</div>
 				<div class"github-btn">
 -->
-					<a href="" class="btn"><img src="images/icons/github-icon.png" alt="Github Account">&nbsp; Github</a>
+					<a href="https://github.com/rdhammack88" class="btn" target="_blank"><img src="images/icons/github-icon.png" alt="Github Account">&nbsp; Github</a>
 					
-					<a href="" class="btn"><img src="images/icons/Pastebin-simple.png" alt="Pastebin Account">&nbsp; Pastebin</a>
+					<a href="https://pastebin.com/u/rdhammack" class="btn" target="_blank"><img src="images/icons/Pastebin-simple.png" alt="Pastebin Account">&nbsp; Pastebin</a>
 <!--				</div>-->
 				
 				

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 	
 	$('.collapsed-nav ~ .navbar li a').click(function() {
-		if(window.innerWidth < 1024) {
+		if(window.innerWidth < 768) {
 			$('.navbar').toggleClass('display');
 			$('span.bar-icon').toggleClass('rotated');
 		}

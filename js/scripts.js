@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	$('.collapsed-nav').click(function() {
 		$('span.bar-icon').toggleClass('rotated');
 		$('.navbar').toggleClass('display');
+		
+		
+	});
+	
+	$('.collapsed-nav ~ .navbar li a').click(function() {
+		$('.navbar').toggleClass('display');
+		$('span.bar-icon').toggleClass('rotated');
 	});
 	
 	// On click of each project, display an overlay //

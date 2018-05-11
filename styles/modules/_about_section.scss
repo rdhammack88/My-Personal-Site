@@ -11,6 +11,7 @@ div#about-wrapper {
 		width: 100%;
 //		max-width: 1200px;
 		height: 100%;
+		min-height: 100vh;
 		padding-top: 10vh;
 		position: relative;
 		left: 0;
@@ -21,11 +22,11 @@ div#about-wrapper {
 			height: 100%;
 			margin: 0 auto;
 			display: grid;
-			grid-row-gap: 2%;
+			grid-row-gap: 2.7%;
 			grid-template-columns: 10% 15% 25% 20% 20% 10%;
 //			grid-template-columns: 10% 15% 22% 22% 22% 10%;
 //			grid-template-columns: 10% 15% 35% 25% 10%;
-			grid-template-rows: calc(100%/2.4) calc(100%/22) calc(100%/3) calc(100%/15);
+			grid-template-rows: calc(100%/2.4) calc(100%/22) calc(100%/2.8) calc(100%/15);
 		}
 	}
 	
@@ -37,6 +38,16 @@ div#about-wrapper {
 		grid-row-end: 2;
 		grid-column-start: 3;
 		grid-column-end: 5;
+		
+//		@include break(1024px) {
+//			grid-column-start: 3;
+//			grid-column-end: 5;
+//		}
+		
+//		@include break(1300px) {
+//			grid-column-start: 2;
+//			grid-column-end: 6;
+//		}
 	}
 
 	.skillsGridItem {
@@ -89,7 +100,7 @@ div#about-wrapper {
 		grid-column-start: 3;
 		grid-column-end: 6;
 		
-		@include break(1024px) {
+		@include break(768px) {
 			margin-top: 0;
 		}
 		

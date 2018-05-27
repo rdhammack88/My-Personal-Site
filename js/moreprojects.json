@@ -26,6 +26,27 @@
 			"githuburl": "https://github.com/rdhammack88/Photography_Portfolio",
 			"description": "An image gallery."
 		},
+{
+			"projectname": "Playlist Maker",
+			"shortname": "playlist_maker",
+			"techused": "HTML5, HTML5 Local Storage API, HTML5 File API, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Git, Font Awesome",
+			"completed": "true",
+			"projectimage": "images/project_images/mediaTimeCalculator-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Playlist_Maker/",
+			"githuburl": "https://github.com/rdhammack88/Playlist-Maker",
+			"description": "Calculate the times of your Media files, currently works with .mp3, .avi, .mov, .mpeg. You can choose to click the input button and upload the file information, or just simply drag-and-drop your files into the browser and the total time will be displayed."
+		 },
+
+{
+			"projectname": "Media Duration Calculator",
+			"shortname": "time_calc",
+			"techused": "HTML5, HTML5 Local Storage API, HTML5 File API, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Git, Font Awesome",
+			"completed": "true",
+			"projectimage": "images/project_images/mediaTimeCalculator-tn.png",
+			"projecturl": "https://www.dustinhammack.com/projects/Media-Duration-Calculator/",
+			"githuburl": "https://github.com/rdhammack88/Media-Duration-Calculator",
+			"description": "Calculate the times of your Media files, currently works with .mp3, .avi, .mov, .mpeg. You can choose to click the input button and upload the file information, or just simply drag-and-drop your files into the browser and the total time will be displayed."
+		 },
 ,
 		"fcc": 
 		[{

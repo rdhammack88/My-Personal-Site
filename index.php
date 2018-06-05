@@ -94,7 +94,7 @@
 						<li>CSS</li>
 						<li>Javascript</li>
 						<li>PHP</li>
-						<li>MySQL</li>
+						<li>SQL</li>
 					</ul>
 				</div>
 

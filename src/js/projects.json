@@ -5,19 +5,21 @@
 				{
 					"projectname": "Blogger",
 					"shortname": "blogger",
-					"techused": "PHP, MySQL, CSS3, Bootstrap v3, Javascript, jQuery v2.1, AJAX, Git",
-					"completed": "true",
+					"techused": "PHP, MySQL, CSS3, Bootstrap v3, Javascript, jQuery v2.1, AJAX",
+					"completed": "false",
+					"completed_description": "Currently converting this project from pure PHP & MySQL, to Laravel and ReactJS.",
 					"projectimage": "images/project_images/blogger-tn.png",
 					"projectimageclass": "sprite-blogger-tn",
-					"projecturl": "https://www.dustinhammack.com/projects/Blogger/",
+					"projecturl": "https://www.dustinhammack.com/projects/blogger/",
 					"githuburl": "https://github.com/rdhammack88/blogger_site",
-					"description": "A CMS site to post your thoughts."
+					"description": "A blogging site to post your thoughts."
 				},
 				{
 					"projectname": "Quizzer",
 					"shortname": "quizzer",
-					"techused": "PHP, MySQL, SCSS, Javascript, AJAX, Git",
+					"techused": "PHP Laravel, MySQL, SCSS, Javascript, AJAX",
 					"completed": "true",
+					"completed_description": "",
 					"projectimage": "images/project_images/quizzer-tn.png",
 					"projectimageclass": "sprite-quizzer-tn",
 					"projecturl": "https://www.dustinhammack.com/projects/Quizzer/",
@@ -27,35 +29,38 @@
 				{
 					"projectname": "Movie Finder",
 					"shortname": "movie_finder",
-					"techused": "PHP, AngularJS, SASS, Bootstrap v3, IMDB API, Git",
+					"techused": "PHP, AngularJS, SASS, Bootstrap v3, OMDb API",
 					"completed": "false",
+					"completed_description": "Currently converting this project from AngularJS to ReactJS, changing API from OMDb TMdb, and adding a \"comment, review, and favorite\" option.",
 					"projectimage": "images/project_images/movieFinder-tn.png",
 					"projectimageclass": "sprite-movieFinder-tn",
-					"projecturl": "https://www.dustinhammack.com/projects/Movie_Finder/",
+					"projecturl": "https://www.dustinhammack.com/projects/movie_reviewer/",
 					"githuburl": "https://github.com/rdhammack88/Movie-Finder",
-					"description": "Find information on almost any movie. <br/> <span class='text-danger'>Currently working on a \"comment, review, and favorite\" option.</span>"
+					"description": "Find information on almost any movie."
 				},
 				{
-					"projectname": "Playlist Maker",
-					"shortname": "playlist_maker",
-					"techused": "HTML5, HTML5 Local Storage API, HTML5 File API, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Git, Font Awesome",
-					"completed": "true",
+					"projectname": "Course Manager",
+					"shortname": "course_manager",
+					"techused": "HTML5, HTML5 Local Storage API, HTML5 File API, SASS, Bootstrap v4, Javascript, jQuery v3.2, jQuery UI, Font Awesome",
+					"completed": "false",
+					"completed_description": "Currently converting this project from Vanilla JavaScript to ReactJS, and changing user interface.",
 					"projectimage": "images/project_images/courseManager-tn.png",
 					"projectimageclass": "sprite-courseManager-tn",
-					"projecturl": "https://www.dustinhammack.com/projects/Playlist_Maker/",
+					"projecturl": "https://www.dustinhammack.com/projects/playlist_maker/",
 					"githuburl": "https://github.com/rdhammack88/Playlist-Maker",
 					"description": "Create a playlist of your choice of movies or music files, and save the list for later."
 				},
 				{
 					"projectname": "Bomber Skateboard Shop",
 					"shortname": "bomber_skateboard_shop",
-					"techused": "PHP, MySQL, SCSS, Javascript, jQuery v3.3, Git, Font Awesome, Google Maps API",
+					"techused": "PHP, MySQL, SCSS, Javascript, jQuery v3.3, Font Awesome, Google Maps API",
 					"completed": "false",
+					"completed_description": "",
 					"projectimage": "images/project_images/bomberSkateShop-tn.png",
 					"projectimageclass": "sprite-bomberSkateShop-tn",
-					"projecturl": "https://www.dustinhammack.com/projects/Bomber-Skateshop/",
+					"projecturl": "https://www.dustinhammack.com/projects/bomber-skateshop/",
 					"githuburl": "https://github.com/rdhammack88/Bomber-Skateshop",
-					"description": "A fictitional skate shop."
+					"description": "A fictitional online skateboard shop."
 				}
 			]
 		}

@@ -12,3 +12,4 @@ email_template/
 extras/
 node_modules/
 package*
+styles/config.rb

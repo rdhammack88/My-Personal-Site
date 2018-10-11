@@ -1,0 +1,23 @@
+/* Site Wide Styles*/
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+section:not(.home) {
+    // display: flex;
+    padding-top: 100px;
+    // margin-top: 60px;
+}

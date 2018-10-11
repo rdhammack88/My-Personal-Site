@@ -1,0 +1,160 @@
+/**
+* Image Styles
+*/
+.mePro {
+    object-fit: none;
+    object-position: -330px -630px;
+    width: 300px;
+    height: 300px;
+    // width: 200px;
+    // height: 200px;
+}
+
+.skate {
+    background-image: url('../../../images/thumbs/skate.png');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    // position: relative;
+    // background-origin: border-box;
+    // background-position: -350px 0;
+    height: 100vh;
+    padding-right: 0;
+    // object-fit: none;
+    // // background-image: url('../../../../images/sprite.png');
+    // // background-position: -10px -10px;
+    // background-position: -500px -400px;
+    // // background-repeat: no-repeat;
+    // height: 400px;
+    // width: 500px;
+    // // width: 1067px; 
+}
+
+.facebook-icon {
+    object-fit: none;
+    object-position: -1357px -650px;
+    width: 30px;
+    height: 30px;
+}
+
+.github-icon {
+    object-fit: none;
+    object-position: -1307px -650px;
+    width: 30px;
+    height: 30px;
+}
+
+.instagram-icon {
+    object-fit: none;
+    object-position: -1257px -650px;
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin-icon {
+    object-fit: none;
+    object-position: -1157px -650px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.pastebin-icon {
+    object-fit: none;
+    object-position: -1097px -655px;
+    width: 35px;
+    height: 20px;
+    
+    // object-position: -1097px -650px;
+    // width: 40px;
+    // height: 30px;
+}
+
+
+
+/** 
+* Sprite Loader
+*/
+.sprite-image, .sprite-G0050332, .sprite-Pastebin-simple, .sprite-blogger-tn, .sprite-bomberSkateShop-tn, .sprite-courseManager-tn, .sprite-facebook-icon, .sprite-github-icon, .sprite-instagram-icon, .sprite-linkedin-logo, .sprite-mePro, .sprite-movieFinder-tn, .sprite-quizzer-tn, .sprite-stackoverflow {
+    background-image: url('../../../images/sprite.png');
+    background-repeat: no-repeat;
+}
+
+.sprite-blogger-tn {
+    background-position: -10px -630px; /* -10px -630px */
+    height: 300px;
+    width: 300px;
+}
+
+.sprite-bomberSkateShop-tn {
+    background-position: -1097px -10px; /* -1097px -10px */ 
+    height: 300px;
+    width: 300px;
+}
+  
+.sprite-courseManager-tn {
+    background-position: -10px -950px; /* -10px -950px */
+    height: 300px;
+    width: 300px;
+}
+  
+.sprite-facebook-icon {
+    background-position: -1357px -650px;
+    height: 30px;
+    width: 30px;
+}
+  
+.sprite-github-icon {
+    background-position: -1307px -650px;
+    height: 30px;
+    width: 30px;
+}
+  
+.sprite-instagram-icon {
+    background-position: -1257px -650px;
+    height: 30px;
+    width: 30px;
+}
+  
+.sprite-linkedin-logo {
+    background-position: -1157px -650px;
+    height: 30px;
+    width: 30px;
+}
+  
+.sprite-mePro {
+    background-position: -330px -630px;
+    height: 600px;
+    width: 600px;
+}
+  
+.sprite-movieFinder-tn {
+    background-position: -650px -630px; /* -650px -630px */
+    height: 300px;
+    width: 300px;
+}
+  
+.sprite-quizzer-tn {
+    background-position: -1097px -330px; /* -1097px -330px */
+    height: 300px;
+    width: 300px;
+}
+  
+.sprite-Pastebin-simple {
+    background-position: -1097px -650px;
+    height: 30px;
+    width: 40px;
+}
+
+.sprite-skate {
+    background-position: -10px -10px;
+    height: 600px;
+    width: 1067px; 
+}
+ 
+.sprite-stackoverflow {
+    background-position: -1207px -650px;
+    height: 30px;
+    width: 30px;
+}
+  

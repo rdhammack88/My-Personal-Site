@@ -1,0 +1,21 @@
+.about {
+    @include break(768px) {
+        @include height-break(800px) {
+            height: 100vh;
+        }
+    }
+
+    h2 {
+        // padding: 20px 0;
+    }
+
+    p.self-bio {
+        text-align: justify;
+    }
+
+    .resumeLinkGridItem {
+        .btn-dark {
+            background-color: darken($cyan, 20%);
+        }
+    }
+}

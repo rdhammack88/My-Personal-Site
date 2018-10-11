@@ -9,3 +9,6 @@ js/smoothscroll.min.js
 DustinHammack-Resume.pdf
 styles/tests
 email_template/
+extras/
+node_modules/
+package*

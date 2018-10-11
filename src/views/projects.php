@@ -14,37 +14,41 @@
 					foreach($project_info as $project) {
 		?>
 
-			<div class="project-container col-10 offset-1 col-lg-4 col-md-6 my-5 mx-auto text-center" data-project-name="<?= $project['shortname']; ?>"> <!--  col-sm-8 offset-sm-2 -->
-				<div class="project-image <?= $project['projectimageclass'] ?>">
+			<div class="project-container col-10 offset-1 col-lg-4 col-md-6 my-5 mx-auto text-center" data-project-name="<?php echo $project['shortname']; ?>"> <!--  col-sm-8 offset-sm-2 -->
+				<div class="project-image <?php echo $project['projectimageclass'] ?>">
 					<div class="project-overlay">
 						<a  class="project-details btn btn-lg btn-info">More Details</a>
 					</div>
 				</div>
 				<div class="project-description d-none">
-					<h3><?= $project['projectname']; ?></h3>
+					<h3><?php echo $project['projectname']; ?></h3>
 				</div>				
 
 				<!-- Project Overlay -->
-				<div class="overlay d-none" id="<?= $project['shortname']; ?>">
+				<div class="overlay d-none" id="<?php echo $project['shortname']; ?>">
 					<div class="project-modal">
-						<p class="close">X</p>
-						<h2><?= $project['projectname']; ?></h2>
-						<p>
-							<strong>Technology Used:</strong> <?= $project['techused']; ?>
+						<span class="close">X</span>
+						<h2><?php echo $project['projectname']; ?></h2>
+						<p class="mt-3 mb-1 text-justify"><strong>Technologies:</strong> <?php echo $project['techused']; ?></p>
+						<p  class="text-justify"><strong>Description:</strong> <?php echo $project['description']; ?></p>
+						<!-- Project and Code Repository Links -->
+						<p class="mt-4 mr-4">
+							<a href="<?php echo $project['projecturl']; ?>" target="_blank" class="btn btn-link p-2">
+								<i class="fas fa-code mr-2"></i>	
+								Check out the project
+							</a>
 						</p>
 						<p>
-							<strong>Project Description:</strong> <?= $project['description']; ?>
-						</p>
-						<p>
-							<a href="<?= $project['projecturl']; ?>" target="_blank" class="btn btn-lg btn-primary">Check out the project</a>
-						</p>
-						<p>
-							<a href="<?= $project['githuburl']; ?>" target="_blank" class="btn btn-lg btn-success">Check out the code</a>
+							<a href="<?php echo $project['githuburl']; ?>" target="_blank" class="btn btn-link p-2">
+								<i class="fab fa-github fa-1x mr-2"></i>
+								Check out the code
+							</a>
 						</p>
 
 						<?php if($project['completed'] === 'false') { ?>
-							<br/><br/><br/>
-							<p class="text-center">** This site is not 100% completed, and I am always adding new features and playing with the diplays.</p>
+							<br/><br/>
+							<p class="text-justify text-danger mb-0">* This site is not 100% completed.</p>
+							<p class="text-justify text-info">** <?php echo $project['completed_description']; ?></p>
 						<?php } ?>
 					</div>
 				</div> <!-- End of Project Overlay -->

@@ -7062,6 +7062,10 @@ ul {
 section:not(.home) {
   padding-top: 100px; }
 
+.btn.btn-link {
+  background-color: #0096bb;
+  color: #eeeeee; }
+
 /* Home Section Styles*/
 .home-left .left-cover {
   display: block;
@@ -7197,7 +7201,7 @@ section:not(.home) {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 99;
   overflow: hidden;
   background: rgba(22, 22, 22, 0.8); }
 .projects .project-container .project-modal {
@@ -7211,44 +7215,41 @@ section:not(.home) {
   max-width: 640px;
   background: #eee;
   padding: 35px;
-  z-index: 99999;
+  z-index: 999;
   -webkit-transform: translate(-50%, -50%) scale(1);
   -moz-transform: translate(-50%, -50%) scale(1);
   -o-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
-  transition-delay: 0.1s; }
+  transform: translate(-50%, -50%) scale(1); }
   .projects .project-container .project-modal p {
-    font-size: 1.1rem;
+    font-size: .99rem;
     display: block; }
   .projects .project-container .project-modal p:nth-child(5),
   .projects .project-container .project-modal p:nth-child(6) {
     display: inline-block; }
-  .projects .project-container .project-modal p.close {
-    font-size: 1.5em;
-    padding: 15px 20px;
-    margin: 0;
-    color: #333;
-    cursor: pointer;
+  .projects .project-container .project-modal span.close {
     position: absolute;
-    top: 0;
-    right: 0; }
+    padding: 15px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    margin: 0;
+    right: 0;
+    top: 0; }
 
-@media (min-height: 650px) {
-  .contact {
-    height: 90vh; } }
-.contact .form-group label {
+.contact .form-group label:not(.form-check-label) {
   width: 100%; }
-  .contact .form-group label strong {
-    display: inline-block;
-    width: 10%; }
-  .contact .form-group label small {
-    display: inline-block;
-    text-align: end;
-    width: 86%; }
-  @media (min-width: 768px) {
-    .contact .form-group label strong {
-      width: 10%; }
-    .contact .form-group label small {
-      width: 87%; } }
+  .contact .form-group label:not(.form-check-label) strong {
+    display: inline-block; }
+  .contact .form-group label:not(.form-check-label) small {
+    display: inline-block; }
+.contact .form-group.form-check {
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  width: 23%; }
+  .contact .form-group.form-check label {
+    width: 90%; }
+  .contact .form-group.form-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px; }
 
 /*# sourceMappingURL=main.css.map */

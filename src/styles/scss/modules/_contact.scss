@@ -1,32 +1,57 @@
 .contact {
     
     @include height-break(650px) {
-        height: 90vh;
+        // height: 90vh;
     }
 
     .form-group {
-        label {
+        label:not(.form-check-label) {
             width: 100%;
 
             strong {
                 display: inline-block;
-                width: 10%
+                // width: 15%
             }
 
             small {
                 display: inline-block;
-                text-align: end;
-                width: 86%;
+                // text-align: end;
+                // width: 75%;
             }
 
             @include break(768px) {
                 strong {
-                    width: 10%
+                    // width: 15%
                 }
     
                 small {
-                    width: 87%;
+                    // width: 77%;
                 }
+            }
+
+            @include break(1200px) {
+                strong {
+                    // width: 15%
+                }
+    
+                small {
+                    // width: 80%;
+                }
+            }
+        }
+
+        &.form-check {
+            border: 1px solid #ccc;
+            padding: 10px 5px;
+            width: 23%;
+
+            label {
+                width: 90%;
+            }
+
+            input[type="checkbox"] {
+                width: 16px;
+                height: 16px;
             }
         }
     }

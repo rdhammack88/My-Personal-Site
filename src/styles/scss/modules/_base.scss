@@ -21,3 +21,8 @@ section:not(.home) {
     padding-top: 100px;
     // margin-top: 60px;
 }
+
+.btn.btn-link {
+    background-color: lighten($blue4, 20%);
+    color: #eeeeee;
+}

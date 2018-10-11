@@ -51,10 +51,8 @@
 							<p class="text-justify text-info">** <?php echo $project['completed_description']; ?></p>
 						<?php } ?>
 					</div>
-				</div> <!-- End of Project Overlay -->
-				
-			</div> <!-- End of Project Container -->
-						
+				</div> <!-- End of Project Overlay -->				
+			</div> <!-- End of Project Container -->						
 
 			<!-- End of all 3 PHP FOREACH -->
 			<?php
@@ -66,6 +64,3 @@
 		</div> <!-- End of Row -->
 	</div> <!-- End of .container -->
 </section><!-- Project Portfolio Section -->
-
-
-<!-- <img src="./images/sprite.png" class="<?php//= $project['projectimageclass'] ?>" alt=""> -->

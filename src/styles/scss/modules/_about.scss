@@ -5,10 +5,6 @@
         }
     }
 
-    h2 {
-        // padding: 20px 0;
-    }
-
     p.self-bio {
         text-align: justify;
     }
@@ -16,6 +12,11 @@
     .resumeLinkGridItem {
         .btn-dark {
             background-color: darken($cyan, 20%);
+
+            > i.material-icons {
+                font-size: 20px;
+                vertical-align: sub;
+            }
         }
     }
 }

@@ -1,0 +1,44 @@
+/* Footer */
+footer {
+    background: black;
+    margin: 0px;
+    position: relative;
+
+    span:not(.heart) {
+        padding: 0.3em 0.7em;
+        color: white;
+        // background: #242423;
+        background: #42423e;
+        border-radius: 50%;
+        margin: 3px 7px;
+        transition: all 500ms ease;
+
+        &:hover {
+            background-color: lighten(#045, 20%);
+        }
+
+        a {
+            text-decoration: none;
+            color: #eee;
+        }
+    }
+
+    span.heart {
+        color: #f00;
+        font-size: 1.7rem;
+    }
+
+    p {
+        margin: 0;
+        // color: #4290a8;
+        color: #eee;
+    }
+
+    .top a {
+        position: absolute;
+        right: 2%;
+        top: 69%;
+        color: #3f494c;
+        transition: all 500ms ease;
+    }
+}

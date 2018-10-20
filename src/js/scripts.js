@@ -69,20 +69,18 @@ $(document).ready(function() {
      * Add smooth scroll affect to page when 'Nav' links are clicked,
      * so that the page smoothly scrolls to referenced element in page
      */
-    $(function() {
-        $('.nav-item a').bind('click', function(event) {
-            // event.preventDefault();
-            var $anchor = $(this);
-            $('html, body')
-                .stop()
-                .animate(
-                    {
-                        scrollTop: $($anchor.attr('href')).offset().top
-                    },
-                    1500,
-                    'easeInOutExpo'
-                );
-        });
+    $('.nav-item a, footer .top a').bind('click', function(event) {
+        event.preventDefault();
+        var $anchor = $(this);
+        $('html, body')
+            .stop()
+            .animate(
+                {
+                    scrollTop: $($anchor.attr('href')).offset().top
+                },
+                1500,
+                'easeInOutExpo'
+            );
     });
 
     /**

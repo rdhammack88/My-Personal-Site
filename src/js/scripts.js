@@ -33,7 +33,7 @@ $(document).ready(function() {
     function activateContactLink() {
         if (
             $(document).height() - $(window).height() <=
-            $(window).scrollTop()
+            $(window).scrollTop() + 200
         ) {
             $('#contact-link')
                 .parent('li')
@@ -41,7 +41,8 @@ $(document).ready(function() {
                 .siblings('li.nav-item')
                 .removeClass('active');
         } else if (
-            $(window).scrollTop() <= 2300 &&
+            $(window).scrollTop() <=
+                $('.projects').offset().top + $('.projects').height() / 1.5 &&
             $(window).scrollTop() >= $('.projects').offset().top
         ) {
             $('#projects-link')

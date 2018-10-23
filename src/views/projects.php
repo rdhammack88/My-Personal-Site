@@ -1,18 +1,18 @@
 <!-- Project Portfolio Section -->
-<section class="projects" id="projects">
+<section class="projects mt-5" id="projects">
 	<div class="container">
 		<h2 class="text-center">Portfolio</h2>
 		<div class="row">
 
-		<?php 
-			$jsonFile = file_get_contents("./src/js/projects.json");
-			$jsonData = json_decode($jsonFile, true);
-			$projects = $jsonData['projects'];
+		<?php
+            $jsonFile = file_get_contents("./src/js/projects.json");
+            $jsonData = json_decode($jsonFile, true);
+            $projects = $jsonData['projects'];
 
-			foreach($projects as $project_set) {
-				foreach($project_set as $project_category => $project_info) {
-					foreach($project_info as $project) {
-		?>
+            foreach ($projects as $project_set) {
+                foreach ($project_set as $project_category => $project_info) {
+                    foreach ($project_info as $project) {
+                        ?>
 
 			<div class="project-container col-10 offset-1 col-lg-4 col-md-6 my-5 mx-auto text-center" data-project-name="<?php echo $project['shortname']; ?>"> <!--  col-sm-8 offset-sm-2 -->
 				<div class="project-image <?php echo $project['projectimageclass'] ?>">
@@ -45,21 +45,23 @@
 							</a>
 						</p>
 
-						<?php if($project['completed'] === 'false') { ?>
+						<?php if ($project['completed'] === 'false') {
+                            ?>
 							<br/><br/>
 							<p class="text-justify text-danger mb-0">* This site is not 100% completed.</p>
 							<p class="text-justify text-info">** <?php echo $project['completed_description']; ?></p>
-						<?php } ?>
+						<?php
+                        } ?>
 					</div>
 				</div> <!-- End of Project Overlay -->				
 			</div> <!-- End of Project Container -->						
 
 			<!-- End of all 3 PHP FOREACH -->
 			<?php
-					}
-				}
-			} 
-			?>
+                    }
+                }
+            }
+            ?>
 
 		</div> <!-- End of Row -->
 	</div> <!-- End of .container -->

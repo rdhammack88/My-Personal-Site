@@ -1,5 +1,19 @@
 $(document).ready(function() {
     /**
+     * Invoke windowScroll() function immediately on page load
+     */
+    windowScroll();
+    /**
+     * Remove top-nav-scroll class from navbar with js, default w/o JS
+     */
+    $('.fixed-top').removeClass('top-nav-scroll');
+    // $('.skills-container').addClass('d-none');
+
+    $('.skills-container').css({
+        opacity: '0'
+    });
+
+    /**
      * When window is scrolled past the top 50px, add class to navbar that changes nav colors
      */
     function fixNavbar() {
@@ -76,13 +90,23 @@ $(document).ready(function() {
             $('.progress-ring circle:nth-of-type(2)').each(function(i) {
                 $(this).addClass(animatedClasses[i]);
             });
-            // $('.skills-container').show();
+            // $('.skills-container').removeClass('d-none');
             $('.skills-container').addClass('animateFadeIn');
-            // .css({
-            //     animation: 'fadeIn 3s ease'
-            // });
         }
     }
+
+    /**
+     * Animate Projects section when scrolled into view
+     * (NOT CURRENTLY WORKING AS EXPECTED)
+     */
+    // function animateProjectsFadeIn() {
+    //     if (
+    //         $(window).scrollTop() >=
+    //         $('.projects').offset().top - $(window).height()
+    //     ) {
+    //         $('.projects').addClass('animateProjectsFadeIn');
+    //     }
+    // }
 
     /**
      * With windowScroll function,
@@ -93,24 +117,8 @@ $(document).ready(function() {
         fixNavbar();
         activateContactLink();
         animateProgress();
+        // animateProjectsFadeIn();
     }
-
-    /**
-     * Invoke windowScroll() function immediately on page load
-     */
-    windowScroll();
-    // $('.skills-container').hide();
-    // $('.skills-container').css({
-    //     opacity: 0
-    // });
-
-    // $('.skills-container').show().fadeIn(3000);
-    // $('.skills-container').css('opacity', '0');
-    // $('.skills-container').hide();
-    // $('.skills-container').hide();
-    // $('.skills-container').hide();
-    //.fadeOut(2000);
-    //.css('opacity', '0');
 
     /**
      * When window is scrolled, Call the windowScroll() function to execute
@@ -123,6 +131,16 @@ $(document).ready(function() {
      */
     $('.navbar-toggler').click(function() {
         $('.navbar-toggler-icon').toggleClass('rotated');
+    });
+
+    /**
+     *
+     */
+    $('.navbar-collapse li a').click(function() {
+        if (window.innerWidth < 768) {
+            $('.navbar-collapse').toggleClass('show');
+            $('.navbar-toggler-icon').toggleClass('rotated');
+        }
     });
 
     /**

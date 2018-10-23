@@ -14,3 +14,4 @@ node_modules/
 package*
 styles/config.rb
 TestPages/
+src/**/*home1*

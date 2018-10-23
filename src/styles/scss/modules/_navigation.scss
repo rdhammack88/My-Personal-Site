@@ -72,17 +72,21 @@ nav.navbar {
             -webkit-transition: all 300ms ease-in-out;
             -moz-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out;
-            background: #333;
+            //background: #333;
             // position: relative;
             width: 100%;
             opacity: 1;
             // top: 0;
             animation: navSlider 4s ease-in 2s;
 
-            li.nav-item a.nav-link:hover {
-                color: #eee;
-                background: #045;
-                border-radius: 0;
+            li.nav-item a.nav-link {
+                font-size: 1.6rem;
+                padding: 0.7rem 1.5rem;
+                &:hover {
+                    color: lighten(#045, 30%); // #eee;
+                    background: #045;
+                    border-radius: 0;
+                }
             }
         }
     }
@@ -102,6 +106,7 @@ nav.navbar {
             color: lighten(#045, 10%); // #eee; //
             font-size: 1.4rem;
             padding: 0.5rem 1.315rem;
+            outline: none;
 
             &:hover {
                 border-radius: 10px;

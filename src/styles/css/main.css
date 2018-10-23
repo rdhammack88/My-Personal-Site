@@ -7019,14 +7019,16 @@ nav.navbar {
       -webkit-transition: all 300ms ease-in-out;
       -moz-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
-      background: #333;
       width: 100%;
       opacity: 1;
       animation: navSlider 4s ease-in 2s; }
-      nav.navbar .navbar-collapse.show li.nav-item a.nav-link:hover {
-        color: #eee;
-        background: #045;
-        border-radius: 0; }
+      nav.navbar .navbar-collapse.show li.nav-item a.nav-link {
+        font-size: 1.6rem;
+        padding: 0.7rem 1.5rem; }
+        nav.navbar .navbar-collapse.show li.nav-item a.nav-link:hover {
+          color: #00beee;
+          background: #045;
+          border-radius: 0; }
   nav.navbar li.nav-item {
     /* Link Items Contained in the Navigation Bar List Items */ }
     nav.navbar li.nav-item.active a.nav-link {
@@ -7037,7 +7039,8 @@ nav.navbar {
     nav.navbar li.nav-item a.nav-link {
       color: #006d88;
       font-size: 1.4rem;
-      padding: 0.5rem 1.315rem; }
+      padding: 0.5rem 1.315rem;
+      outline: none; }
       nav.navbar li.nav-item a.nav-link:hover {
         border-radius: 10px; }
       @media (min-width: 768px) {

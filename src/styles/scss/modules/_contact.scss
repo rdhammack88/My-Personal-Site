@@ -3,6 +3,15 @@
         // height: 90vh;
     }
 
+    // color: #eee;
+    // background-color: #00beee;
+
+    .required-text {
+        //     // color: lighten(#dc3545, 40%);
+        //     color: red;
+        color: #dc3545;
+    }
+
     .form-group {
         label:not(.form-check-label) {
             width: 100%;
@@ -41,6 +50,7 @@
 
         &.form-check {
             border: 1px solid #ccc;
+            // border: 1px solid #222;
             padding: 10px 5px;
             width: 50%;
 

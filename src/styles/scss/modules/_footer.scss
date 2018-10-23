@@ -1,6 +1,6 @@
 /* Footer */
 footer {
-    background: black;
+    background: #0f1e32; // black;
     margin: 0px;
     position: relative;
 
@@ -40,5 +40,9 @@ footer {
         top: 69%;
         color: #3f494c;
         transition: all 500ms ease;
+
+        .fa-arrow-circle-up:hover {
+            color: lighten(#045, 20%);
+        }
     }
 }

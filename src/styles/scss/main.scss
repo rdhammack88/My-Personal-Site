@@ -1,8 +1,6 @@
-// @import "modules/_buttons";
-// @import "modules/_animations";
-// @import "modules/_custom_classes";
+/* Import Bootstrap Styles */
 @import '../bootstrap/bootstrap';
-
+/* Import All Custom Styles */
 @import 'modules/_variables';
 @import 'modules/_mixins';
 @import 'modules/_animations';
@@ -10,7 +8,6 @@
 @import 'modules/_navigation';
 @import 'modules/_base';
 @import 'modules/_home';
-// @import 'modules/_home1';
 @import 'modules/_about';
 @import 'modules/_skills';
 @import 'modules/_projects';

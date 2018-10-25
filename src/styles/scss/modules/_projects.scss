@@ -18,14 +18,42 @@
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                width: 93%;
+                width: 86%;
                 text-align: center;
                 z-index: -2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 transform: scale(0.1);
-                transition: all 0.6s ease-in;
+                transition: transform 0.6s ease-in;
+
+                /* Mobile Break Points for as many devices as possible for the project-overlay */
+                @include break(303px) {
+                    width: 87%;
+                }
+
+                @include break(326px) {
+                    width: 88%;
+                }
+
+                @include break(351px) {
+                    width: 89%;
+                }
+
+                @include break(378px) {
+                    width: 90%;
+                }
+
+                @include break(421px) {
+                    width: 91%;
+                }
+
+                @include break(478px) {
+                    width: 92%;
+                }
+                @include break(536px) {
+                    width: 93%;
+                }
 
                 @include break(768px) {
                     width: 91%;

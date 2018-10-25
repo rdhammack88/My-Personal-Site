@@ -1,15 +1,32 @@
 /* Site Wide Styles*/
 
-// html,
 body {
     font-size: 16px;
-    position: relative;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
     max-width: 100%;
     scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-weight: 800 !important;
 }
 
 ul {
@@ -26,6 +43,6 @@ section:not(.home) {
 }
 
 .btn.btn-link {
-    background-color: lighten($blue, 20%);
-    color: $lightwhite;
+    background-color: $light-blue;
+    color: $light-white;
 }

@@ -7050,6 +7050,10 @@ section:not(.home) {
   background-color: #68d8f5;
   color: #eeeeee; }
 
+/* Override Bootstrap styles to remove margin on mobile devices */
+.row {
+  margin-right: 0 !important; }
+
 /* Home Section Styles*/
 .home-wrapper .row {
   position: relative; }

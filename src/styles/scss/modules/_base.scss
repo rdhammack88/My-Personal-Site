@@ -46,3 +46,8 @@ section:not(.home) {
     background-color: $light-blue;
     color: $light-white;
 }
+
+/* Override Bootstrap styles to remove margin on mobile devices */
+.row {
+    margin-right: 0 !important;
+}

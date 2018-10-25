@@ -7095,7 +7095,7 @@ section:not(.home) {
   @media (min-width: 0px) and (max-width: 767px) {
     .home-wrapper .home-right {
       position: relative;
-      top: -200px;
+      top: -30vh;
       color: #eeeeee; } }
 .home-wrapper .home-img-holder {
   position: absolute;
@@ -7114,7 +7114,9 @@ section:not(.home) {
         transform: translateX(-35%);
         border-radius: 0; } }
     .home-wrapper .home-img-holder > div img {
-      border-radius: 20%; }
+      border-radius: 20%;
+      width: 50vw;
+      max-width: 300px; }
       @media (min-width: 768px) {
         .home-wrapper .home-img-holder > div img {
           border-radius: 0; } }

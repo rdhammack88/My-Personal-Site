@@ -1,36 +1,36 @@
 /* Footer */
 footer {
-    background: #0f1e32;
+    background: $darkest-blue;
     margin: 0px;
     position: relative;
 
     span:not(.heart) {
         padding: 0.3em 0.7em;
         color: white;
-        background: #42423e;
+        background: $darker-gray;
         border-radius: 50%;
         margin: 3px 7px;
         transition: all 500ms ease;
 
         &:hover {
-            background-color: lighten(#045, 20%);
+            background-color: $baby-blue;
         }
 
         a {
             text-decoration: none;
-            color: #eee;
+            color: $light-white;
         }
     }
 
     p {
         margin: 0;
-        color: #eee;
+        color: $light-white;
         font-weight: 700;
         font-size: 1rem;
 
         span.heart {
             padding: 0 5px;
-            color: rgba(230, 84, 84, 0.863);
+            color: $heart-red;
             font-size: 1.4rem;
         }
     }
@@ -39,11 +39,11 @@ footer {
         position: absolute;
         right: 2%;
         top: 5%;
-        color: #3f494c;
+        color: $gray;
         transition: all 500ms ease;
 
         .fa-arrow-circle-up:hover {
-            color: lighten(#045, 20%);
+            color: $baby-blue;
         }
     }
 }

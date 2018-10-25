@@ -14,14 +14,11 @@
                     foreach ($project_info as $project) {
                         ?>
 
-			<div class="project-container col-10 offset-1 col-lg-4 col-md-6 my-5 mx-auto text-center" data-project-name="<?php echo $project['shortname']; ?>"> <!--  col-sm-8 offset-sm-2 -->
+			<div class="project-container col-10 offset-1 col-lg-4 col-md-6 my-5 mx-auto text-center" data-project-name="<?php echo $project['shortname']; ?>"> 
+			<!--  col-sm-8 offset-sm-2 -->
 				<div class="project-image <?php echo $project['projectimageclass'] ?>">
 
-
-
-<img class="project-image <?php echo $project['projectimageclass'] ?>" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=">
-
-
+					<img class="project-image <?php echo $project['projectimageclass'] ?>" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=">
 
 					<div class="project-overlay">
 						<a  class="project-details btn btn-lg btn-info">More Details</a>
@@ -73,11 +70,4 @@
 		</div> <!-- End of Row -->
 	</div> <!-- End of .container -->
 </section><!-- Project Portfolio Section -->
-
-
-<!-- <img class="blogger-tn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=">
-<img class="bomberskateshop-tn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=">
-<img class="coursemanager-tn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=">
-<img class="moviefinder-tn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII=">
-<img class="quizzer-tn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAACJJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAHgZLbQAAQGVUwQAAAAASUVORK5CYII="> -->
 

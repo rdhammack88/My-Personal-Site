@@ -7,17 +7,13 @@ $skills: (
 
 @each $skill, $percent in $skills {
     .#{$skill}-progress-ring {
-        stroke: #045; // #f4645f;
+        stroke: $dark-blue;
         stroke-width: 20px;
         $PI: 3.141592653589793;
         $circumference: (55 * 2 * $PI);
         stroke-dasharray: $circumference $circumference;
         stroke-dashoffset: $circumference;
-        animation: progress-#{$skill}
-            4s
-            linear
-            1.2s
-            forwards; // transition: stroke-dashoffset 8s;
+        animation: progress-#{$skill} 4s linear 1.2s forwards;
         transform: rotate(-90deg);
         transform-origin: 50% 50%;
         $offset: $circumference - (($percent / 100) * $circumference);

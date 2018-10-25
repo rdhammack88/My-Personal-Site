@@ -1,15 +1,6 @@
 .contact {
-    @include height-break(650px) {
-        // height: 90vh;
-    }
-
-    // color: #eee;
-    // background-color: #00beee;
-
     .required-text {
-        //     // color: lighten(#dc3545, 40%);
-        //     color: red;
-        color: #dc3545;
+        color: $salmon-red;
     }
 
     .form-group {
@@ -18,39 +9,15 @@
 
             strong {
                 display: inline-block;
-                // width: 15%
             }
 
             small {
                 display: inline-block;
-                // text-align: end;
-                // width: 75%;
-            }
-
-            @include break(768px) {
-                strong {
-                    // width: 15%
-                }
-
-                small {
-                    // width: 77%;
-                }
-            }
-
-            @include break(1200px) {
-                strong {
-                    // width: 15%
-                }
-
-                small {
-                    // width: 80%;
-                }
             }
         }
 
         &.form-check {
-            border: 1px solid #ccc;
-            // border: 1px solid #222;
+            border: 1px solid $light-gray;
             padding: 10px 5px;
             width: 50%;
 
@@ -71,8 +38,5 @@
                 height: 16px;
             }
         }
-    }
-
-    @include break(768px) {
     }
 }

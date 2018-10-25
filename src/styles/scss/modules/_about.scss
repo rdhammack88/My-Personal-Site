@@ -1,13 +1,7 @@
 .about {
-    @include break(768px) {
-        @include height-break(800px) {
-            // height: 100vh;
-        }
-    }
-
     .bio-wrapper {
-        background-color: #ec848b;
-        color: #fff;
+        background-color: $salmon-pink;
+        color: $light-white;
         width: 100vw;
         p.self-bio {
             text-align: justify;
@@ -17,7 +11,7 @@
 
     .resumeLinkGridItem {
         .btn-dark {
-            background-color: darken($cyan, 20%);
+            background-color: $dark-cyan;
             > i.material-icons {
                 font-size: 20px;
                 vertical-align: sub;
@@ -25,18 +19,14 @@
         }
     }
     .skills-container {
-        background-color: #68d8f5; // lighten(#045, 30%);
+        background-color: $light-blue;
         width: 100vw !important;
-        color: #fff; // animation: fadeIn 4s ease forwards;
-        h4 {
-            // border-bottom: 1px solid #aaa;
-        }
+        color: $light-white;
         p.skills-description {
-            // text-align: center;
             font-size: 0.9rem;
             letter-spacing: 0.1rem;
             padding-top: 1.2rem;
-            border-top: 1px solid #eee;
+            border-top: 1px solid $light-white;
         }
         .progress-container {
             position: relative;
@@ -44,13 +34,12 @@
                 height: 150px;
                 width: 150px;
                 .progress-outline {
-                    fill: #eee;
+                    fill: $light-white;
                 }
             }
             .label {
-                color: #eee;
-                background-color: #ec848b; // #eb3e4a;
-                // lighten(#045, 10%); //#006d88
+                color: $light-white;
+                background-color: $salmon-pink;
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;

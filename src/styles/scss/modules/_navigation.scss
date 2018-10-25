@@ -2,9 +2,6 @@
 nav.navbar {
     /* Remove Padding When Screen is Less Than 768px */
     padding: 0;
-    // -webkit-transition: backgroud-color 700ms ease-in-out;
-    // -moz-transition: backgroud-color 700ms ease-in-out;
-    // transition: backgroud-color 700ms ease-in-out;
 
     /* Add Padding When Screen is Greater Than 768px */
     @include break(768px) {
@@ -35,7 +32,7 @@ nav.navbar {
 
             /* Toggler Hamburger Icon When Clicked, Rotate Class is Toggled Via jQuery */
             &.rotated {
-                background: #eee;
+                background: $light-white;
 
                 &:nth-child(1) {
                     transform: rotateZ(45deg);
@@ -72,20 +69,17 @@ nav.navbar {
             -webkit-transition: all 300ms ease-in-out;
             -moz-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out;
-            background-color: #0f1e32;
-            //background: #333;
-            // position: relative;
+            background-color: $darkest-blue;
             width: 100%;
             opacity: 1;
-            // top: 0;
             animation: navSlider 4s ease-in 2s;
 
             li.nav-item a.nav-link {
                 font-size: 1.6rem;
                 padding: 0.7rem 1.5rem;
                 &:hover {
-                    color: lighten(#045, 30%); // #eee;
-                    background: #045;
+                    color: $baby-blue;
+                    background: $dark-blue;
                     border-radius: 0;
                 }
             }
@@ -95,17 +89,18 @@ nav.navbar {
     /* List Items Contained in the Navigation Bar */
     li.nav-item {
         &.active a.nav-link {
-            color: lighten(#045, 30%);
+            color: $baby-blue;
 
             @include break(768px) {
-                color: lighten(#045, 30%);
+                color: $baby-blue;
             }
         }
 
         /* Link Items Contained in the Navigation Bar List Items */
         a.nav-link {
-            color: lighten(#045, 10%); // #eee; //
+            color: $dark-blue;
             font-size: 1.4rem;
+            font-weight: 600;
             padding: 0.5rem 1.315rem;
             outline: none;
 
@@ -114,7 +109,7 @@ nav.navbar {
             }
 
             @include break(768px) {
-                color: #045;
+                color: $dark-blue;
             }
 
             @include break(768px, 950px) {
@@ -139,7 +134,7 @@ nav.navbar {
             content: '';
             width: 0%;
             height: 3px;
-            background-color: #046;
+            background-color: $dark-blue;
             position: relative;
             display: block;
             top: 2px;
@@ -157,19 +152,26 @@ nav.navbar {
 }
 
 li.active .border-bottom-animation::after {
-    background-color: lighten(#045, 30%);
+    background-color: $baby-blue;
 }
 
 /* Custom Class Added When Screen is Scrolled, to Give Navigation Menu a Background */
 .top-nav-scroll {
     padding: 10px 0;
-    background-color: #0f1e32; // $darkblue;
-    // background-color: rgba(2, 41, 51, .6);
+    background-color: $darkest-blue;
     -webkit-transition: all 700ms ease-in-out;
     -moz-transition: all 700ms ease-in-out;
     transition: all 700ms ease-in-out;
 
     .collapse li:not(.active) a.nav-link {
-        color: #eee; // lighten(#045, 10%);
+        color: $light-white;
+    }
+
+    .border-bottom-animation {
+        &::after {
+            @include break(768px) {
+                background-color: $light-white;
+            }
+        }
     }
 }

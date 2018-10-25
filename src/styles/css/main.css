@@ -6785,7 +6785,10 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 /* Import All Custom Styles */
 /* Load Fonts */
-/* Site Colors */
+/***** Site Colors *****/
+/* Light Colors */
+/* Normal Colors */
+/* Dark Colors */
 @-o-keyframes navSlider {
   0% {
     top: -200px; }
@@ -6915,7 +6918,7 @@ nav.navbar {
       transition: all 0.8s ease;
       /* Toggler Hamburger Icon When Clicked, Rotate Class is Toggled Via jQuery */ }
       nav.navbar .navbar-toggler .navbar-toggler-icon.rotated {
-        background: #eee; }
+        background: #eeeeee; }
         nav.navbar .navbar-toggler .navbar-toggler-icon.rotated:nth-child(1) {
           transform: rotateZ(45deg);
           margin-top: 0.7rem; }
@@ -6947,7 +6950,7 @@ nav.navbar {
         padding: 0.7rem 1.5rem; }
         nav.navbar .navbar-collapse.show li.nav-item a.nav-link:hover {
           color: #00beee;
-          background: #045;
+          background: #004455;
           border-radius: 0; }
   nav.navbar li.nav-item {
     /* Link Items Contained in the Navigation Bar List Items */ }
@@ -6957,15 +6960,16 @@ nav.navbar {
         nav.navbar li.nav-item.active a.nav-link {
           color: #00beee; } }
     nav.navbar li.nav-item a.nav-link {
-      color: #006d88;
+      color: #004455;
       font-size: 1.4rem;
+      font-weight: 600;
       padding: 0.5rem 1.315rem;
       outline: none; }
       nav.navbar li.nav-item a.nav-link:hover {
         border-radius: 10px; }
       @media (min-width: 768px) {
         nav.navbar li.nav-item a.nav-link {
-          color: #045; } }
+          color: #004455; } }
       @media (min-width: 768px) and (max-width: 950px) {
         nav.navbar li.nav-item a.nav-link {
           font-size: 1.2rem;
@@ -6980,7 +6984,7 @@ nav.navbar {
     content: '';
     width: 0%;
     height: 3px;
-    background-color: #046;
+    background-color: #004455;
     position: relative;
     display: block;
     top: 2px;
@@ -7002,18 +7006,36 @@ li.active .border-bottom-animation::after {
   -moz-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out; }
   .top-nav-scroll .collapse li:not(.active) a.nav-link {
-    color: #eee; }
+    color: #eeeeee; }
+  @media (min-width: 768px) {
+    .top-nav-scroll .border-bottom-animation::after {
+      background-color: #eeeeee; } }
 
 /* Site Wide Styles*/
 body {
   font-size: 16px;
-  position: relative;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 100%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden; }
+
+p {
+  font-family: Oswald, Arial, Helvetica, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Josefin Slab', Arial, Helvetica, sans-serif; }
+
+a {
+  font-weight: 800 !important; }
 
 ul {
   margin: 0;
@@ -7025,7 +7047,7 @@ section:not(.home) {
   padding-top: 100px; }
 
 .btn.btn-link {
-  background-color: #0096bb;
+  background-color: #68d8f5;
   color: #eeeeee; }
 
 /* Home Section Styles*/
@@ -7038,13 +7060,11 @@ section:not(.home) {
   width: 100%; }
 .home-wrapper .home-right {
   margin: auto;
-   /*
-* Arrow Code
-*/ }
+  /** Arrow Code */ }
   .home-wrapper .home-right h2 {
     margin-bottom: -10px;
     margin-top: -20px;
-    font-weight: 400; }
+    font-weight: 800; }
   .home-wrapper .home-right h4 {
     margin-top: -2px;
     margin-bottom: 25px;
@@ -7072,7 +7092,7 @@ section:not(.home) {
     .home-wrapper .home-right {
       position: relative;
       top: -200px;
-      color: #eee; } }
+      color: #eeeeee; } }
 .home-wrapper .home-img-holder {
   position: absolute;
   width: 100%;
@@ -7081,7 +7101,7 @@ section:not(.home) {
   align-items: center;
   justify-content: center; }
   .home-wrapper .home-img-holder > div {
-    background: #fff;
+    background: #eeeeee;
     padding: 10px;
     border-radius: 20%;
     transform: translateY(-45%); }
@@ -7097,7 +7117,7 @@ section:not(.home) {
 
 .about .bio-wrapper {
   background-color: #ec848b;
-  color: #fff;
+  color: #eeeeee;
   width: 100vw; }
   .about .bio-wrapper p.self-bio {
     text-align: justify;
@@ -7110,21 +7130,21 @@ section:not(.home) {
 .about .skills-container {
   background-color: #68d8f5;
   width: 100vw !important;
-  color: #fff; }
+  color: #eeeeee; }
   .about .skills-container p.skills-description {
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
     padding-top: 1.2rem;
-    border-top: 1px solid #eee; }
+    border-top: 1px solid #eeeeee; }
   .about .skills-container .progress-container {
     position: relative; }
     .about .skills-container .progress-container svg.progress-ring {
       height: 150px;
       width: 150px; }
       .about .skills-container .progress-container svg.progress-ring .progress-outline {
-        fill: #eee; }
+        fill: #eeeeee; }
     .about .skills-container .progress-container .label {
-      color: #eee;
+      color: #eeeeee;
       background-color: #ec848b;
       height: 100px;
       width: 100px;
@@ -7143,7 +7163,7 @@ section:not(.home) {
         vertical-align: super; }
 
 .html-progress-ring {
-  stroke: #045;
+  stroke: #004455;
   stroke-width: 20px;
   stroke-dasharray: 345.5751918949 345.5751918949;
   stroke-dashoffset: 345.5751918949;
@@ -7158,7 +7178,7 @@ section:not(.home) {
   100% {
     stroke-dashoffset: 51.8362787842; } }
 .css-progress-ring {
-  stroke: #045;
+  stroke: #004455;
   stroke-width: 20px;
   stroke-dasharray: 345.5751918949 345.5751918949;
   stroke-dashoffset: 345.5751918949;
@@ -7173,7 +7193,7 @@ section:not(.home) {
   100% {
     stroke-dashoffset: 51.8362787842; } }
 .javascript-progress-ring {
-  stroke: #045;
+  stroke: #004455;
   stroke-width: 20px;
   stroke-dasharray: 345.5751918949 345.5751918949;
   stroke-dashoffset: 345.5751918949;
@@ -7188,7 +7208,7 @@ section:not(.home) {
   100% {
     stroke-dashoffset: 86.3937979737; } }
 .php-progress-ring {
-  stroke: #045;
+  stroke: #004455;
   stroke-width: 20px;
   stroke-dasharray: 345.5751918949 345.5751918949;
   stroke-dashoffset: 345.5751918949;
@@ -7288,7 +7308,7 @@ section:not(.home) {
   .contact .form-group label:not(.form-check-label) small {
     display: inline-block; }
 .contact .form-group.form-check {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 10px 5px;
   width: 50%; }
   @media (min-width: 768px) {
@@ -7316,13 +7336,13 @@ footer {
     margin: 3px 7px;
     transition: all 500ms ease; }
     footer span:not(.heart):hover {
-      background-color: #0096bb; }
+      background-color: #00beee; }
     footer span:not(.heart) a {
       text-decoration: none;
-      color: #eee; }
+      color: #eeeeee; }
   footer p {
     margin: 0;
-    color: #eee;
+    color: #eeeeee;
     font-weight: 700;
     font-size: 1rem; }
     footer p span.heart {
@@ -7336,6 +7356,6 @@ footer {
     color: #3f494c;
     transition: all 500ms ease; }
     footer .top a .fa-arrow-circle-up:hover {
-      color: #0096bb; }
+      color: #00beee; }
 
 /*# sourceMappingURL=main.css.map */

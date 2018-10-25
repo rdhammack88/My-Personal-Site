@@ -1,30 +1,4 @@
 /* Home Section Styles*/
-// .home-wrapper {
-//     position: relative;
-//     height: 100vh;
-//     width: 100vw;
-
-//     &::before {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100vw;
-//         height: 100%;
-//         background-image: url(../../../../images/MySitePhotos/CartoonSkate-Edit1.png);
-//         background-repeat: no-repeat;
-//         background-attachment: fixed;
-//         background-size: contain;
-//         filter: sepia(40%);
-//         @include break(768px) {
-//             background-size: cover;
-//         }
-
-//         @include break(1400px) {
-//             background-position: top center;
-//         }
-//     }
-// }
 
 .home-wrapper {
     .row {
@@ -32,26 +6,21 @@
     }
 
     .home-left {
-        // display: flex;
-
         .left-cover {
             display: block;
-            background: transparentize($darkblue, 0.4);
+            background: transparentize($darker-blue, 0.4);
             height: 100%;
             width: 100%;
         }
     }
 
     .home-right {
-        // display: flex;
         margin: auto;
-        // text-align: center;
-        // font-size: 1.5em;
 
         h2 {
             margin-bottom: -10px;
             margin-top: -20px;
-            font-weight: 400;
+            font-weight: 800;
         }
 
         h4 {
@@ -60,11 +29,9 @@
             font-weight: 300;
         }
 
-        /*
-     * Arrow Code
-     */
+        /** Arrow Code */
         span {
-            color: $goldenrod;
+            color: $light-goldenrod;
             vertical-align: middle;
 
             &:first-of-type {
@@ -81,7 +48,7 @@
         }
 
         hr {
-            border: 0.5px solid darken($goldenrod, 20%);
+            border: 0.5px solid $dark-goldenrod;
             display: inline-block;
             width: 72%;
             margin: 0 auto;
@@ -93,87 +60,20 @@
         @include break(0px, 767px) {
             position: relative;
             top: -200px;
-            color: #eee;
+            color: $light-white;
         }
     }
 
     .home-img-holder {
-        // border: 1px solid #000;
-        // border-right: none;
-        // // width: 50%;
-        // position: absolute;
-        // // left: 30%;
-        // // top: 34vh;
-        // left: 20%;
-        // top: 28vh;
-        // transition: all 300ms ease;
-
-        // width: 100%;
-        // height: 100%;
         position: absolute;
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-
-        // @include break(570px) {
-        //     left: 25%;
-        // }
-
-        // @include break(650px) {
-        //     left: 27%;
-        // }
-
-        // @include break(710px) {
-        //     left: 29%;
-        // }
-
-        // @include break(768px) {
-        //     left: 15%;
-        // }
-
-        // @include break(870px) {
-        //     left: 19%;
-        // }
-
-        // @include break(925px) {
-        //     left: 22%;
-        // }
-
-        // @include break(1050px) {
-        //     left: 25%;
-        // }
-
-        // @include break(1200px) {
-        //     left: 27%;
-        // }
-
-        // @include break(1350px) {
-        //     left: 30%;
-        // }
-
-        // @include break(1500px) {
-        //     left: 33%;
-        // }
-
-        // @include break(1700px) {
-        //     left: 36%;
-        // }
-
-        // @include break(2100px) {
-        //     left: 40%;
-        // }
-
-        // @include break(2700px) {
-        //     left: 45%;
-        // }
 
         > div {
-            background: #fff;
+            background: $light-white;
             padding: 10px;
             border-radius: 20%;
             transform: translateY(-45%);

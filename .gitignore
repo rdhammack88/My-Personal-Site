@@ -15,3 +15,4 @@ package*
 styles/config.rb
 TestPages/
 src/**/*home1*
+src/**/*.min*
